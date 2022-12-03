@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-export function GA({ id }: { id: string }) {
+export default function GA({ id }: { id: string }) {
   return (
     <>
       <Script

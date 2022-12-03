@@ -2,9 +2,16 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-import { Main, Cite, Pics } from "./sections";
+// import { Main, Cite, Pics } from "./sections";
+export { default as Main } from "./sections/Main";
+export { default as Cite } from "./sections/Cite";
+export { default as Pics } from "./sections/Pics";
+
+import { useWindowScroll } from "react-use";
 
 export default function Home() {
+  const { y } = useWindowScroll();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,19 +20,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Main />
+      <Main y={y} />
 
       <Cite />
 
-      <Pics />
+      <Pics y={y} />
 
       {/* <section>SESSION</section>
 
       <section>TESTIMONIALS</section>
 
-      <section>APPLICATION</section>
+      <section>APPLICATION</section> */}
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"

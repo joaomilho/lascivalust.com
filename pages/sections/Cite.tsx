@@ -1,17 +1,35 @@
-export function Cite() {
+import styles from "../../styles/Home.module.css";
+import { useBoundingclientrectRef } from "rooks";
+import { useRef } from "react";
+import { EB_Garamond } from "@next/font/google";
+const g = EB_Garamond();
+
+export default function Cite() {
   return (
     <section>
-      <cite>
-        Play and Domination are part of My Divine Nature. I am the Fire that
-        burns and purifies. I will bring Hell to your body and Salvation to your
-        soul. You will not be able to resist Me. You will do anything to please
-        Me. I will train you into perfect submission, and you will adore Me as
-        the superior Goddess I am. Beware your Goddess accepts no scripted
-        scenarios: while respecting (yet always pushing) your boundaries, I will
-        use and abuse you however I want. Remember: Your body belongs to Me.
-        Your mind belongs to Me. My wish is your command. You will submit to Me,
-        completely. This is where you belong, under My Feet. Submit all power to
-        Me.
+      <cite className={[styles.cite, g.className].join(" ")}>
+        <p>I am Mistress Lasciva. That’s how you shall refer to Me.</p>
+        <p>I’m a High Protocol Dominatrix.</p>
+        <p>
+          Recently graduated at The Dominatrix Academy under mentoring of the
+          Great Mistress Malissia, I specialized in Domination through Seduction
+          and structural training. To apply into submission and servitude, and
+          enter My very exclusive world and be worthy of My time and attention,
+          you must elevate yourself to My standards of elegance and
+          sophistication.
+        </p>
+        <p>
+          I rejoice specially over: Goddess Worship, Chastity devices,
+          Feminization (sissy/slut training), Bondage (Mummification), Golden
+          Showers, Flogging (Spanking, whipping), Breath Play, Pet Play,
+          objectification and more.
+        </p>
+        <p>
+          If you prove that you’re a hardworking sub/slave willing to put
+          serious effort to enjoy and endure our time together, I will train and
+          polish you into perfect servitude. Are you ready to evolve?
+        </p>
+        <p className={styles.flourish}>ef</p>
       </cite>
     </section>
   );

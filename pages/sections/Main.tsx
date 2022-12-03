@@ -2,14 +2,20 @@ import styles from "../../styles/Home.module.css";
 import { useParallax, Parallax } from "react-scroll-parallax";
 import { title } from "../../fonts";
 
-export function Main() {
+export default function Main({ y }: { y: number }) {
   return (
     <main className={styles.main}>
       <Parallax speed={0} className={styles.bg} />
       <Parallax speed={-15} className={styles.text}>
         <h2 className={styles.job}>High Protocol Dominatrix</h2>
       </Parallax>
-      <Parallax speed={-30} className={styles.text}>
+
+      <Parallax
+        speed={-35.1}
+        scale={[1.235, 1.235]}
+        className={styles.text}
+        // style={{ backgroundImage: `linear-gradient(${y}deg, #000, #400)` }}
+      >
         <h1 className={styles.title}>Lasciva Lust</h1>
       </Parallax>
 
