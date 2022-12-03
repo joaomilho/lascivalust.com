@@ -3,9 +3,9 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 // import { Main, Cite, Pics } from "./sections";
-export { default as Main } from "./sections/Main";
-export { default as Cite } from "./sections/Cite";
-export { default as Pics } from "./sections/Pics";
+import Main from "./sections/Main";
+import Cite from "./sections/Cite";
+import Pics from "./sections/Pics";
 
 import { useWindowScroll } from "react-use";
 
