@@ -1,13 +1,12 @@
 import styles from "../../styles/Home.module.css";
 import { useBoundingclientrectRef } from "rooks";
 import { useRef } from "react";
-import { EB_Garamond } from "@next/font/google";
-const g = EB_Garamond();
+import { text } from "../../fonts";
 
 export default function Cite() {
   return (
     <section>
-      <cite className={[styles.cite, g.className].join(" ")}>
+      <cite className={[styles.cite, text.className].join(" ")}>
         <p>I am Mistress Lasciva. That’s how you shall refer to Me.</p>
         <p>I’m a High Protocol Dominatrix.</p>
         <p>
@@ -19,17 +18,11 @@ export default function Cite() {
           sophistication.
         </p>
         <p>
-          I rejoice specially over: Goddess Worship, Chastity devices,
-          Feminization (sissy/slut training), Bondage (Mummification), Golden
-          Showers, Flogging (Spanking, whipping), Breath Play, Pet Play,
-          objectification and more.
+          If you are a hardworking sub/slave willing to put serious effort to
+          enjoy and endure our time together, I will train and polish you into
+          perfect servitude. Are you ready to evolve?
         </p>
-        <p>
-          If you prove that you’re a hardworking sub/slave willing to put
-          serious effort to enjoy and endure our time together, I will train and
-          polish you into perfect servitude. Are you ready to evolve?
-        </p>
-        <p className={styles.flourish}>ef</p>
+        {/* <p className={styles.flourish}>ef</p> */}
       </cite>
     </section>
   );

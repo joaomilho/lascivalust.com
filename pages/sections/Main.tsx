@@ -1,6 +1,7 @@
 import styles from "../../styles/Home.module.css";
 import { useParallax, Parallax } from "react-scroll-parallax";
 import { title } from "../../fonts";
+import FormButton from "./FormButton";
 
 export default function Main({ y }: { y: number }) {
   return (

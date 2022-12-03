@@ -6,8 +6,12 @@ import styles from "../styles/Home.module.css";
 import Main from "./sections/Main";
 import Cite from "./sections/Cite";
 import Pics from "./sections/Pics";
+import CTA from "./sections/CTA";
+import FormButton from "./sections/FormButton";
 
 import { useWindowScroll } from "react-use";
+import List from "./sections/List";
+import Menu from "./sections/Menu";
 
 export default function Home() {
   const { y } = useWindowScroll();
@@ -20,12 +24,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Menu y={y} />
+
       <Main y={y} />
 
+      <a name="about" />
       <Cite />
 
+      <a name="gallery" />
       <Pics y={y} />
 
+      <a name="protocol" />
+      <List />
+
+      <CTA />
       {/* <section>SESSION</section>
 
       <section>TESTIMONIALS</section>
