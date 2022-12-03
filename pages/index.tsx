@@ -28,13 +28,13 @@ export default function Home() {
 
       <Main y={y} />
 
-      <a name="about" />
+      <a id="about" />
       <Cite />
 
-      <a name="gallery" />
+      <a id="gallery" />
       <Pics y={y} />
 
-      <a name="protocol" />
+      <a id="protocol" />
       <List />
 
       <CTA />
