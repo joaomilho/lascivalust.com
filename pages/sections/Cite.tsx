@@ -22,7 +22,6 @@ export default function Cite() {
           enjoy and endure our time together, I will train and polish you into
           perfect servitude. Are you ready to evolve?
         </p>
-        {/* <p className={styles.flourish}>ef</p> */}
       </cite>
     </section>
   );

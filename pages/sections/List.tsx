@@ -4,7 +4,7 @@ import { text } from "../../fonts";
 export default function CTA() {
   return (
     <section className={[styles.cta, text.className].join(" ")}>
-      <p className={styles.flourish}>ef</p>
+      <hr />
       <b>I rejoice over:</b>
       <br />
       <br />
@@ -29,7 +29,7 @@ export default function CTA() {
         <li>FinDom</li>
         <li>Electro-Play</li>
       </ul>
-      <p className={styles.flourish}>ef</p>
+      <hr />
       <br />
       <b>My Hard limits:</b>
       <br />

@@ -1,9 +1,19 @@
+@font-face {
+  font-family: "e";
+  src: url(../fonts/e-light.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background: black;
 }
 
 a {
@@ -20,7 +30,13 @@ a {
     color-scheme: dark;
   }
   body {
-    /* color: white; */
     background: black;
   }
+}
+
+hr {
+  width: 200px;
+  border: 0;
+  border-bottom: 1px solid rgba(255,0,0,0.5);
+  margin: 60px auto;
 }

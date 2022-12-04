@@ -1,11 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 
 import styles from "../styles/Home.module.css";
+import { useDevice } from "../hooks/useDevice";
 
-import { useWindowSize } from "rooks";
-// TBD change with window scroll position
-import { useWindowScroll } from "react-use";
+import { useWindowSize, useWindowScrollPosition } from "rooks";
 
 import Main from "./sections/Main";
 import Cite from "./sections/Cite";
@@ -14,15 +12,15 @@ import CTA from "./sections/CTA";
 import List from "./sections/List";
 import Menu from "./sections/Menu";
 
-function ResponsiveHome() {
-  const { innerWidth, innerHeight, outerHeight, outerWidth } = useWindowSize();
-  const { y } = useWindowScroll();
+function App() {
+  const device = useDevice();
 
+  const { scrollY: y } = useWindowScrollPosition();
   return (
     <>
       <Menu y={y} />
 
-      <Main y={y} />
+      <Main device={device} y={y} />
 
       <a id="about" />
       <Cite />
@@ -46,7 +44,7 @@ export default function Home() {
         <meta name="description" content="High Protocol Dominatrix" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ResponsiveHome />
+      <App />;
     </div>
   );
 }
