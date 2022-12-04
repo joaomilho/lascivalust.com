@@ -1,14 +1,11 @@
+import Image from "next/image";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import { Parallax } from "react-scroll-parallax";
 import styles from "../../styles/Home.module.css";
-// import { useBoundingclientrectRef } from "rooks";
 
 // @ts-ignore
 const images = [...Array(12).keys()];
 
-export default function Pics({ y }: { y: number }) {
-  // const [ref, client] = useBoundingclientrectRef();
-
+export default function Gallery({ y }: { y: number }) {
   return (
     <section className={styles.gallery}>
       <ResponsiveMasonry
@@ -18,7 +15,12 @@ export default function Pics({ y }: { y: number }) {
         <Masonry gutter={"20px"}>
           {images.map((i) => {
             return (
-              <img key={i} src={`./imgs/${i}.jpg`} className={styles.pic} />
+              <Image
+                alt="Lasciva Lust"
+                key={i}
+                src={`./imgs/${i}.jpg`}
+                className={styles.pic}
+              />
             );
           })}
         </Masonry>
