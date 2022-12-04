@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && next export && mv out docs && touch docs/.nojekyll && git add . && git commit -m \"Deploy\" && git push"
+    "deploy": "next build && next export && mv out/ docs/ && touch docs/.nojekyll && git add . && git commit -m \"Deploy\" && git push"
   },
   "dependencies": {
     "@next/font": "^13.0.6",
