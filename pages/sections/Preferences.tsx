@@ -1,6 +1,28 @@
 import styles from "../../styles/Home.module.css";
 import { text } from "../../fonts";
 
+export const preferences = [
+  "High Protocol",
+  "Goddess Worship",
+  "Chastity/Key holding",
+  "Latex",
+  "Feminization (sissy/slut training)",
+  "Bondage and restrains",
+  "Mummification",
+  "Golden Showers",
+  "Flogging",
+  "Impact Play (spanking, paddle, flogger, strap, cane)",
+  "Tattoo Art",
+  "Breath Play",
+  "Pet Play",
+  "Objectification (human furniture)",
+  "Slave training",
+  "Cuckolding",
+  "Tease & Denial",
+  "FinDom",
+  "Electro-Play",
+];
+
 export default function Preferences() {
   return (
     <section className={[styles.protocol, text.className].join(" ")}>
@@ -9,25 +31,9 @@ export default function Preferences() {
       <br />
       <br />
       <ul className={styles.list}>
-        <li>High Protocol </li>
-        <li>Goddess Worship </li>
-        <li>Chastity/Key holding </li>
-        <li>Latex</li>
-        <li>Feminization (sissy/slut training)</li>
-        <li>Bondage and restrains</li>
-        <li>Mummification</li>
-        <li>Golden Showers</li>
-        <li>Flogging</li>
-        <li>Impact Play (spanking, paddle, flogger, strap, cane)</li>
-        <li>Tattoo Art</li>
-        <li>Breath Play</li>
-        <li>Pet Play</li>
-        <li>Objectification (human furniture)</li>
-        <li>Slave training</li>
-        <li>Cuckolding</li>
-        <li>Tease & Denial</li>
-        <li>FinDom</li>
-        <li>Electro-Play</li>
+        {preferences.map((pref) => {
+          return <li key={pref}>{pref} </li>;
+        })}
       </ul>
       <hr />
       <br />
