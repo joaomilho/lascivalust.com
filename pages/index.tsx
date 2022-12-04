@@ -66,10 +66,9 @@ export default function Home() {
           url: "https://lascivalust.com",
           title,
           description,
-
           images: [
             {
-              url: "https://lascivalust.com/imgs/9.jpg",
+              url: "https://lascivalust.com/imgs/main.jpg",
               width: 2320,
               height: 3088,
               alt: "Lasciva Lust",
