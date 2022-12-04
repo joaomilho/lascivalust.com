@@ -9,7 +9,7 @@ import Main from "./sections/Main";
 import Cite from "./sections/Cite";
 import Pics from "./sections/Pics";
 import CTA from "./sections/CTA";
-import List from "./sections/List";
+import Preferences from "./sections/Preferences";
 import Menu from "./sections/Menu";
 
 function App() {
@@ -28,8 +28,8 @@ function App() {
       <a id="gallery" className={styles.anchor} />
       <Pics y={y} />
 
-      <a id="protocol" className={styles.anchor} />
-      <List />
+      <a id="preferences" className={styles.anchor} />
+      <Preferences />
 
       <CTA />
     </>

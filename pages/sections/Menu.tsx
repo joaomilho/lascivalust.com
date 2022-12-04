@@ -25,7 +25,7 @@ export default function Menu({ y, device }: { y: number; device: Device }) {
           <a href="#gallery">Gallery</a>
         </li>
         <li>
-          <a href="#protocol">Protocol</a>
+          <a href="#preferences">Preferences</a>
         </li>
         <li>
           <a
