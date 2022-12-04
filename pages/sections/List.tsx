@@ -3,7 +3,7 @@ import styles from "../../styles/Home.module.css";
 import { text } from "../../fonts";
 export default function CTA() {
   return (
-    <section className={[styles.cta, text.className].join(" ")}>
+    <section className={[styles.protocol, text.className].join(" ")}>
       <hr />
       <b>I rejoice over:</b>
       <br />

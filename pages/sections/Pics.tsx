@@ -10,7 +10,7 @@ export default function Pics({ y }: { y: number }) {
   // const [ref, client] = useBoundingclientrectRef();
 
   return (
-    <section>
+    <section className={styles.gallery}>
       <ResponsiveMasonry
         columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}
         style={{ padding: 20 }}

@@ -1,10 +1,21 @@
 import FormButton from "./FormButton";
 import styles from "../../styles/Home.module.css";
 import { text } from "../../fonts";
+import type { Device } from "../../hooks/useDevice";
 
-export default function Menu({ y }: { y: number }) {
+const breakpoint: Record<Device, number> = {
+  tablet: 1200,
+  desktop: 1200,
+  mobile: 240,
+  unknown: 240,
+};
+
+export default function Menu({ y, device }: { y: number; device: Device }) {
   return (
-    <nav className={styles.nav} style={y > 1200 ? { top: 0 } : {}}>
+    <nav
+      className={styles.nav}
+      style={y > breakpoint[device] ? { top: 0 } : {}}
+    >
       <span className={styles.logo}>Lasciva Lust</span>
       <ul className={styles.menu}>
         <li>
@@ -17,14 +28,12 @@ export default function Menu({ y }: { y: number }) {
           <a href="#protocol">Protocol</a>
         </li>
         <li>
-          <button
-            data-tf-popup="GwlQTW03"
-            data-tf-iframe-props="title=Application"
-            data-tf-medium="snippet"
+          <a
+            href="https://x9i9iqnp2m1.typeform.com/to/GwlQTW03?typeform-source=lascivalust.com"
             className={styles.applyButtonMenu}
           >
-            Submit to Me
-          </button>
+            Submit
+          </a>
         </li>
       </ul>
     </nav>

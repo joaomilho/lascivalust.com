@@ -18,17 +18,17 @@ function App() {
   const { scrollY: y } = useWindowScrollPosition();
   return (
     <>
-      <Menu y={y} />
+      <Menu device={device} y={y} />
 
       <Main device={device} y={y} />
 
-      <a id="about" />
+      <a id="about" className={styles.anchor} />
       <Cite />
 
-      <a id="gallery" />
+      <a id="gallery" className={styles.anchor} />
       <Pics y={y} />
 
-      <a id="protocol" />
+      <a id="protocol" className={styles.anchor} />
       <List />
 
       <CTA />
