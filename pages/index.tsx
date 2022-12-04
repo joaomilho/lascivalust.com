@@ -7,7 +7,7 @@ import { useWindowSize, useWindowScrollPosition } from "rooks";
 
 import Main from "./sections/Main";
 import Cite from "./sections/Cite";
-import Pics from "./sections/Pics";
+import Gallery from "./sections/Gallery";
 import CTA from "./sections/CTA";
 import Preferences from "./sections/Preferences";
 import Menu from "./sections/Menu";
@@ -26,7 +26,7 @@ function App() {
       <Cite />
 
       <a id="gallery" className={styles.anchor} />
-      <Pics y={y} />
+      <Gallery y={y} />
 
       <a id="preferences" className={styles.anchor} />
       <Preferences />

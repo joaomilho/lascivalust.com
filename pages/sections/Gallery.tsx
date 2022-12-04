@@ -15,7 +15,7 @@ export default function Gallery({ y }: { y: number }) {
         <Masonry gutter={"20px"}>
           {images.map((i) => {
             return (
-              <Image
+              <img
                 alt="Lasciva Lust"
                 key={i}
                 src={`./imgs/${i}.jpg`}
