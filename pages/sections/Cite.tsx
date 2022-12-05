@@ -7,8 +7,8 @@ export default function Cite() {
   return (
     <section>
       <cite className={[styles.cite, text.className].join(" ")}>
-        <p>I am Mistress Lasciva. That’s how you shall refer to Me.</p>
-        <p>I’m a High Protocol Dominatrix.</p>
+        <p>I am Mistress Lasciva. This how you shall refer to Me.</p>
+        <p>I am a High Protocol Dominatrix.</p>
         <p>
           Recently graduated at The Dominatrix Academy under mentoring of the
           Great Mistress Malissia, I specialized in Domination through Seduction
