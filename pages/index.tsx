@@ -26,12 +26,14 @@ function App() {
       <Cite />
 
       <a id="gallery" className={styles.anchor} />
-      <Gallery y={y} />
+      <Gallery y={y} device={device} />
 
       <a id="preferences" className={styles.anchor} />
       <Preferences />
 
       <CTA />
+
+      {/* <img src="./imgs/full-bw.jpg" style={{ width: "100%" }} /> */}
     </>
   );
 }

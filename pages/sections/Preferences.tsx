@@ -26,30 +26,36 @@ export const preferences = [
 export default function Preferences() {
   return (
     <section className={[styles.protocol, text.className].join(" ")}>
-      <hr />
-      <b>I rejoice over:</b>
-      <br />
-      <br />
-      <ul className={styles.list}>
-        {preferences.map((pref) => {
-          return <li key={pref}>{pref} </li>;
-        })}
-      </ul>
-      <hr />
-      <br />
-      <b>My Hard limits:</b>
-      <br />
-      <br />
-      <ul className={styles.listNope}>
-        <li>Brown Showers </li>
-        <li>Blood Play</li>
-        <li>Cultural/Religious humiliation </li>
-        <li>Emotional Labor </li>
-        <li>little/ABDL</li>
-        <li>Heavy Medical Play</li>
-        <li>Male gratification</li>
-        <li>Degradation</li>
-      </ul>
+      {/* <hr /> */}
+      <table cellPadding={0} cellSpacing={0} style={{ width: "100%" }}>
+        <tr>
+          <td>
+            <b>Preferences</b>
+            <br />
+            <br />
+            <ul className={styles.list}>
+              {preferences.map((pref) => {
+                return <li key={pref}>{pref}</li>;
+              })}
+            </ul>
+          </td>
+          <td>
+            <b>Hard limits</b>
+            <br />
+            <br />
+            <ul className={styles.listNope}>
+              <li>Brown Showers </li>
+              <li>Blood Play</li>
+              <li>Cultural/Religious humiliation </li>
+              <li>Emotional Labor </li>
+              <li>little/ABDL</li>
+              <li>Heavy Medical Play</li>
+              <li>Male gratification</li>
+              <li>Degradation</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
     </section>
   );
 }

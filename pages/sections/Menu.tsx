@@ -3,8 +3,8 @@ import { text } from "../../fonts";
 import type { Device } from "../../hooks/useDevice";
 
 const breakpoint: Record<Device, number> = {
-  tablet: 1200,
-  desktop: 1200,
+  tablet: 800,
+  desktop: 800,
   mobile: 240,
   unknown: 240,
 };

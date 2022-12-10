@@ -3,12 +3,12 @@
   z-index: 99;
   top: 0;
   left: 0;
-  background: #000;
+  background: #fff;
   width: 100%;
 
   top: -80px;
   transition: top 0.4s;
-  box-shadow: 2px 0 2px rgb(214, 12, 16);
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.4);
 }
 
 .menu {
@@ -19,6 +19,7 @@
   float: right;
   align-items: center;
   font-size: 0.75em;
+  
 }
 
 .menu li {
@@ -28,7 +29,8 @@
 
 .menu li a {
   display: block;
-  color: #fff;
+  color: #000;
+  
   text-decoration: underline;
   line-height: 20px;
 
@@ -41,7 +43,7 @@
   padding: 20px;
   text-align: center;
   font-family: "e";
-  color: white;
+  color: #000;
   font-size: 16px;
 
   display: inline-block;
@@ -49,7 +51,7 @@
 
 @media (min-width: 1080px) {
   .logo {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .menu {
@@ -62,20 +64,36 @@
 }
 
 .protocol {
-  color: rgba(255, 255, 255, 0.8);
-  text-align: center;
+  /* color: rgba(255, 255, 255, 0.8); */
+  /* text-align: center; */
   font-weight: 300;
   font-size: 1.2em;
 }
 
+.protocol table {
+  width: 100%;
+}
+
+.protocol table td {
+  padding: 20px;
+  vertical-align: top;
+}
+
+
 @media (min-width: 1080px) {
+  .protocol table td {
+    padding: 120px;
+  } 
+
   .protocol {
     font-size: 1.6em;
   }
 }
 
+
+
 .cta {
-  color: rgba(255, 255, 255, 0.8);
+  /* color: rgba(255, 255, 255, 0.8); */
   text-align: center;
   font-weight: 300;
   font-size: 1.2em;
@@ -114,7 +132,8 @@
 }
 
 .applyButtonMenu {
-  background-color: rgba(214, 12, 16, 0.4);
+  /* background-color: rgba(214, 12, 16, 0.4); */
+  color: red !important;
 }
 
 .main {
@@ -125,60 +144,77 @@
   /* justify-content: center; */
   align-items: center;
   position: relative;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1080px) {
   margin-bottom: 120px;
 }
 
 .bg {
   position: relative;
-  height: 100vw;
+  height: 66vw;
   width: 100%;
   z-index: 1;
-  background-image: url("../public/imgs/bg.jpg");
+  /* background-image: url("../public/imgs/bg-dec-10.jpeg"); */
+  background-image: url("../public/imgs/bg.jpeg");
   background-size: cover;
 }
 
 @media (min-width: 1080px) {
-  .bg {
-    height: 1400px;
-  }
+
 }
 
 .text {
   z-index: 3;
   position: absolute;
-  top: 100px;
+  bottom: 10vh;
   text-align: center;
-  color: black;
-}
-
-@media (min-width: 1080px) {
+  line-height: 0;
+  /* border: 1px solid black; */
+  /* color: black; */
+  color: white;
+  /* color: red; */
+  line-height: 0;
+  
+  transform: scale(1.232);
+  mix-blend-mode: overlay;
   
 }
 
-@media (min-width: 1440px) {
+
+@media (min-width: 1080px) {
   .text {
+    z-index: 3;
+    position: absolute;
+    top: 100vh;
+    text-align: center;
+    color: black;
+    color: rgba(255,255,255,2);
+    line-height: 0;
+    
+    transform: scale(1.232);
+    mix-blend-mode: overlay;
+    
+  }
+}
+
+@media (min-width: 1440px) {
+  /* .text {
     background-image: linear-gradient(0deg, #500, #000);
     background-size: 100%;
     background-clip: text;
 
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-  }
+  } */
 }
 
-.job {
-  font-family: "e";
-  margin: 0;
-  line-height: 1.15;
-  font-size: 1.25rem;
-  font-weight: 100;
-  text-transform: uppercase;
-}
 
 .title {
   font-family: "e";
   margin: 0;
-  line-height: 1.15;
+  line-height: 0;
   font-size: 18vw;
   font-weight: 100;
 }
@@ -186,30 +222,18 @@
 .pic {
   width: 100%;
   z-index: 1;
-}
-
-@media (min-width: 1440px) {
-  .pic {
-    transition: all 0.4s;
-    filter: grayscale(100%);
-    transform: scale(0.99);
-  }
-
-  .pic:hover {
-    filter: grayscale(60%);
-    transform: scale(1.04);
-    z-index: 2;
-  }
+  /* margin-bottom: 40px; */
 }
 
 .cite {
   font-style: normal;
   margin: 20px;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1.6em;
+  
 
   display: block;
-  color: rgba(255, 255, 255, 0.8);
+  /* color: rgba(255, 255, 255, 0.8); */
 }
 
 @media (min-width: 1080px) {
@@ -223,8 +247,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  text-decoration: underline;
-  text-decoration-color: #333;
+  
 }
 
 .listNope {
@@ -241,6 +264,13 @@
   top: -80px;
 }
 
-.gallery {
+/* .gallery {
   margin-bottom: 100px;
+  column-gap: 40px;
+
+  column-count: 3;
 }
+
+.gallery img {
+  margin-bottom: 40px;
+} */
