@@ -42,7 +42,7 @@ import { preferences } from "./sections/Preferences";
 import { NextSeo } from "next-seo";
 
 const title = "Lasciva Lust";
-const description = "High Protocol Dominatrix";
+const description = "Seductrix ProDomme";
 const keywords = [
   "bdsm",
   "dominatrix",
