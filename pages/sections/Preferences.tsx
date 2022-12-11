@@ -6,16 +6,16 @@ export const preferences = [
   "Goddess Worship",
   "Chastity/Key holding",
   "Latex",
-  "Feminization (sissy/slut training)",
+  "Feminization",
   "Bondage and restrains",
   "Mummification",
   "Golden Showers",
   "Flogging",
-  "Impact Play (spanking, paddle, flogger, strap, cane)",
+  "Impact Play",
   "Tattoo Art",
   "Breath Play",
   "Pet Play",
-  "Objectification (human furniture)",
+  "Objectification",
   "Slave training",
   "Cuckolding",
   "Tease & Denial",
@@ -23,10 +23,15 @@ export const preferences = [
   "Electro-Play",
 ];
 
+export const detail: Record<string, string> = {
+  Feminization: "sissy/slut training",
+  "Impact Play": "spanking, paddle, flogger, strap, cane",
+  Objectification: "human furniture",
+};
+
 export default function Preferences() {
   return (
     <section className={[styles.protocol, text.className].join(" ")}>
-      {/* <hr /> */}
       <table cellPadding={0} cellSpacing={0} style={{ width: "100%" }}>
         <tr>
           <td>
@@ -35,7 +40,14 @@ export default function Preferences() {
             <br />
             <ul className={styles.list}>
               {preferences.map((pref) => {
-                return <li key={pref}>{pref}</li>;
+                return (
+                  <li key={pref}>
+                    {pref}
+                    {detail[pref] ? (
+                      <small style={{ color: "#666" }}> ({detail[pref]})</small>
+                    ) : null}
+                  </li>
+                );
               })}
             </ul>
           </td>
