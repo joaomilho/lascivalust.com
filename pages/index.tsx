@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 
 import styles from "../styles/Home.module.css";
 import { useDevice } from "../hooks/useDevice";
@@ -6,11 +7,13 @@ import { useDevice } from "../hooks/useDevice";
 import { useWindowSize, useWindowScrollPosition } from "rooks";
 
 import Main from "./sections/Main";
-import Cite from "./sections/Cite";
+import About from "./sections/About";
 import Gallery from "./sections/Gallery";
 import CTA from "./sections/CTA";
 import Preferences from "./sections/Preferences";
 import Menu from "./sections/Menu";
+
+import PopUp from "./components/PopUp";
 
 function App() {
   const device = useDevice();
@@ -18,12 +21,13 @@ function App() {
   const { scrollY: y } = useWindowScrollPosition();
   return (
     <>
+      <PopUp />
       <Menu device={device} y={y} />
 
       <Main device={device} y={y} />
 
       <a id="about" className={styles.anchor} />
-      <Cite />
+      <About />
 
       <a id="gallery" className={styles.anchor} />
       <Gallery y={y} device={device} />

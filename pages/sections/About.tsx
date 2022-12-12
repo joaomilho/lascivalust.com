@@ -1,11 +1,14 @@
 import styles from "../../styles/Home.module.css";
 import { useBoundingclientrectRef } from "rooks";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { text } from "../../fonts";
+import useInView from "../../hooks/useInView";
 
-export default function Cite() {
+export default function About() {
+  const ref = useInView("about");
+
   return (
-    <section>
+    <section ref={ref}>
       <cite
         className={[styles.cite, text.className].join(" ")}
         style={{ paddingBottom: 80 }}

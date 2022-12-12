@@ -9,7 +9,24 @@ const breakpoint: Record<Device, number> = {
   unknown: 240,
 };
 
+enum Screen {
+  about = "about",
+  gallery = "gallery",
+  preferences = "preferences",
+  submit = "submit",
+}
+
 export default function Menu({ y, device }: { y: number; device: Device }) {
+  function click(screen: Screen) {
+    return () => {
+      window.gtag("event", `Click ${screen} menu`, {
+        page_name: screen,
+        title: screen,
+        screen_name: screen,
+      });
+    };
+  }
+
   return (
     <nav
       className={styles.nav}
@@ -18,17 +35,24 @@ export default function Menu({ y, device }: { y: number; device: Device }) {
       <span className={styles.logo}>Lasciva Lust</span>
       <ul className={styles.menu}>
         <li>
-          <a href="#about">About</a>
+          <a href="#about" onClick={click(Screen.about)}>
+            About
+          </a>
         </li>
         <li>
-          <a href="#gallery">Gallery</a>
+          <a href="#gallery" onClick={click(Screen.gallery)}>
+            Gallery
+          </a>
         </li>
         <li>
-          <a href="#preferences">Preferences</a>
+          <a href="#preferences" onClick={click(Screen.preferences)}>
+            Preferences
+          </a>
         </li>
         <li>
           <a
             href="https://x9i9iqnp2m1.typeform.com/to/GwlQTW03?typeform-source=lascivalust.com"
+            onClick={click(Screen.submit)}
             className={styles.applyButtonMenu}
           >
             Submit

@@ -1,5 +1,6 @@
 import styles from "../../styles/Home.module.css";
 import { text } from "../../fonts";
+import useInView from "../../hooks/useInView";
 
 export const preferences = [
   "High Protocol",
@@ -30,43 +31,50 @@ export const detail: Record<string, string> = {
 };
 
 export default function Preferences() {
+  const ref = useInView("preferences");
+
   return (
-    <section className={[styles.protocol, text.className].join(" ")}>
+    <section ref={ref} className={[styles.protocol, text.className].join(" ")}>
       <table cellPadding={0} cellSpacing={0} style={{ width: "100%" }}>
-        <tr>
-          <td>
-            <b>Preferences</b>
-            <br />
-            <br />
-            <ul className={styles.list}>
-              {preferences.map((pref) => {
-                return (
-                  <li key={pref}>
-                    {pref}
-                    {detail[pref] ? (
-                      <small style={{ color: "#666" }}> ({detail[pref]})</small>
-                    ) : null}
-                  </li>
-                );
-              })}
-            </ul>
-          </td>
-          <td>
-            <b>Hard limits</b>
-            <br />
-            <br />
-            <ul className={styles.listNope}>
-              <li>Brown Showers </li>
-              <li>Blood Play</li>
-              <li>Cultural/Religious humiliation </li>
-              <li>Emotional Labor </li>
-              <li>little/ABDL</li>
-              <li>Heavy Medical Play</li>
-              <li>Male gratification</li>
-              <li>Degradation</li>
-            </ul>
-          </td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>
+              <b>Preferences</b>
+              <br />
+              <br />
+              <ul className={styles.list}>
+                {preferences.map((pref) => {
+                  return (
+                    <li key={pref}>
+                      {pref}
+                      {detail[pref] ? (
+                        <small style={{ color: "#666" }}>
+                          {" "}
+                          ({detail[pref]})
+                        </small>
+                      ) : null}
+                    </li>
+                  );
+                })}
+              </ul>
+            </td>
+            <td>
+              <b>Hard limits</b>
+              <br />
+              <br />
+              <ul className={styles.listNope}>
+                <li>Brown Showers </li>
+                <li>Blood Play</li>
+                <li>Cultural/Religious humiliation </li>
+                <li>Emotional Labor </li>
+                <li>little/ABDL</li>
+                <li>Heavy Medical Play</li>
+                <li>Male gratification</li>
+                <li>Degradation</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </section>
   );
