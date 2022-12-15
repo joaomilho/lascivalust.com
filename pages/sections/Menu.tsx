@@ -51,7 +51,7 @@ export default function Menu({ y, device }: { y: number; device: Device }) {
         </li>
         <li>
           <a
-            href="https://x9i9iqnp2m1.typeform.com/to/GwlQTW03?typeform-source=lascivalust.com"
+            href="https://h6o5rhe132.execute-api.eu-central-1.amazonaws.com/applications"
             onClick={click(Screen.submit)}
             className={styles.applyButtonMenu}
           >

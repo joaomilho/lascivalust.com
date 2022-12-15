@@ -5,7 +5,7 @@ export default function CTA() {
     <section className={[styles.cta, text.className].join(" ")}>
       Ready to start your training?{" "}
       <a
-        href="https://x9i9iqnp2m1.typeform.com/to/GwlQTW03?typeform-source=lascivalust.com"
+        href="https://h6o5rhe132.execute-api.eu-central-1.amazonaws.com/applications"
         className={styles.applyButton}
       >
         Submit to Me
