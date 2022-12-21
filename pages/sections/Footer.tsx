@@ -25,6 +25,7 @@ export default function Footer() {
           return (
             <li>
               <SocialIcon url={link.destination} />
+              <br />
               <a href={link.destination}>{link.source}</a>
             </li>
           );

@@ -13,6 +13,7 @@ specifiers:
   next: 13.0.6
   next-seo: ^5.15.0
   next-share: ^0.19.0
+  nextjs-redirect: ^6.0.1
   react: 18.2.0
   react-dom: 18.2.0
   react-responsive: ^9.0.2
@@ -35,6 +36,7 @@ dependencies:
   next: 13.0.6_biqbaboplfbrettd7655fr4n2y
   next-seo: 5.15.0_6jx7hpii6hgsrmhxgqrmo3277u
   next-share: 0.19.0_react@18.2.0
+  nextjs-redirect: 6.0.1_next@13.0.6+react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-responsive: 9.0.2_react@18.2.0
@@ -1666,6 +1668,16 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
+    dev: false
+
+  /nextjs-redirect/6.0.1_next@13.0.6+react@18.2.0:
+    resolution: {integrity: sha512-SScRdqhGwbD9HbATM+6KMoRyW5QdsPtBBknPPUBxeItnv3wOrhII4pW+0TrvglWNxeRUwI2GsnrDHCV/6juBtQ==}
+    peerDependencies:
+      next: '*'
+      react: '*'
+    dependencies:
+      next: 13.0.6_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
     dev: false
 
   /object-assign/4.1.1:
