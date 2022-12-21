@@ -11,6 +11,7 @@ import Gallery from "./sections/Gallery";
 import CTA from "./sections/CTA";
 import Preferences from "./sections/Preferences";
 import Menu from "./sections/Menu";
+import Footer from "./sections/Footer";
 
 import PopUp from "./components/PopUp";
 
@@ -35,6 +36,8 @@ function App() {
       <Preferences />
 
       <CTA />
+
+      <Footer />
 
       {/* <img src="./imgs/full-bw.jpg" style={{ width: "100%" }} /> */}
     </>

@@ -5,15 +5,19 @@
           <priority>1.0</priority>
       </url>
       <url>
-          <loc>https://linktr.ee/lascivalust</loc>
-          <priority>0.9</priority>
-      </url>
-      <url>
-          <loc>https://www.instagram.com/mistress_lasciva</loc>
+          <loc>https://lascivalust.com/twitter</loc>
           <priority>0.8</priority>
       </url>
       <url>
-          <loc>https://twitter.com/lascivalust</loc>
+          <loc>https://lascivalust.com/linktree</loc>
+          <priority>0.9</priority>
+      </url>
+      <url>
+          <loc>https://lascivalust.com/instagram</loc>
+          <priority>0.8</priority>
+      </url>
+      <url>
+          <loc>https://lascivalust.com/ig</loc>
           <priority>0.8</priority>
       </url>
   </urlset>

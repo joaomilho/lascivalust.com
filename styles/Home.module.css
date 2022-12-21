@@ -272,3 +272,31 @@
 .gallery img {
   margin-bottom: 40px;
 } */
+
+.footer {
+  background: #112;
+  /* min-height: 400px; */
+  /* position: absolute;
+  bottom: 0; */
+  width: 100vw;
+  color:white;
+  padding: 40px 0 80px 0;
+  text-align: center;
+}
+
+.footer ul{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+  display: flex;
+  /* align-items: center; */
+  flex-flow: row nowrap;
+  justify-content: center;
+
+
+}
+
+.footer ul li{ 
+  padding: 20px;
+  width: 100px;
+}
