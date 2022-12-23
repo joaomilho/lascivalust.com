@@ -15,6 +15,10 @@ const links = [
     source: "Instagram",
     destination: "https://www.instagram.com/mistress_lasciva",
   },
+  {
+    source: "Substack",
+    destination: "https://lasciva.substack.com",
+  },
 ];
 
 export default function Footer() {
