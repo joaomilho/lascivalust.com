@@ -25,9 +25,9 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <ul>
-        {links.map((link) => {
+        {links.map((link, i) => {
           return (
-            <li>
+            <li key={i}>
               <SocialIcon url={link.destination} />
               <br />
               <a href={link.destination}>{link.source}</a>

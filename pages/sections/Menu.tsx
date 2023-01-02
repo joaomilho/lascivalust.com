@@ -16,7 +16,19 @@ enum Screen {
   submit = "submit",
 }
 
-export default function Menu({ y, device }: { y: number; device: Device }) {
+Menu.defaultProps = {
+  show: false,
+};
+
+export default function Menu({
+  y,
+  device,
+  show,
+}: {
+  y: number;
+  device: Device;
+  show: boolean;
+}) {
   function click(screen: Screen) {
     return () => {
       window.gtag("event", `Click ${screen} menu`, {
@@ -30,22 +42,22 @@ export default function Menu({ y, device }: { y: number; device: Device }) {
   return (
     <nav
       className={styles.nav}
-      style={y > breakpoint[device] ? { top: 0 } : {}}
+      style={show || y > breakpoint[device] ? { top: 0 } : {}}
     >
       <span className={styles.logo}>Lasciva Lust</span>
       <ul className={styles.menu}>
         <li>
-          <a href="#about" onClick={click(Screen.about)}>
+          <a href="/#about" onClick={click(Screen.about)}>
             About
           </a>
         </li>
         <li>
-          <a href="#gallery" onClick={click(Screen.gallery)}>
+          <a href="/#gallery" onClick={click(Screen.gallery)}>
             Gallery
           </a>
         </li>
         <li>
-          <a href="#preferences" onClick={click(Screen.preferences)}>
+          <a href="/#preferences" onClick={click(Screen.preferences)}>
             Preferences
           </a>
         </li>

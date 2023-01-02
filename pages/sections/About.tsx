@@ -1,6 +1,4 @@
 import styles from "../../styles/Home.module.css";
-import { useBoundingclientrectRef } from "rooks";
-import { useEffect, useRef } from "react";
 import { text } from "../../fonts";
 import useInView from "../../hooks/useInView";
 
