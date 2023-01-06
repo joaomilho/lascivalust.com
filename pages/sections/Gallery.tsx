@@ -38,7 +38,7 @@ export default function Gallery({ y, device }: { y: number; device: Device }) {
             <td style={{ paddingRight: pad[device] }}>
               <img
                 alt="Lasciva Lust"
-                src={`./imgs/0.jpg`}
+                src={`./imgs/3.jpg`}
                 className={styles.pic}
               />
             </td>
@@ -53,6 +53,30 @@ export default function Gallery({ y, device }: { y: number; device: Device }) {
               <img
                 alt="Lasciva Lust"
                 src={`./imgs/2.jpg`}
+                className={styles.pic}
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td style={{ paddingRight: pad[device] }}>
+              <img
+                alt="Lasciva Lust"
+                src={`./imgs/0.jpg`}
+                className={styles.pic}
+              />
+            </td>
+            <td style={{ padding: pad[device] }}>
+              <img
+                alt="Lasciva Lust"
+                src={`./imgs/4.jpg`}
+                className={styles.pic}
+              />
+            </td>
+            <td style={{ paddingLeft: pad[device] }}>
+              <img
+                alt="Lasciva Lust"
+                src={`./imgs/5.jpg`}
                 className={styles.pic}
               />
             </td>
