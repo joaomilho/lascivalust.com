@@ -38,6 +38,11 @@ const networks = [
       "https://www.mistress-guide.com/images/ourpics/mistress_guide_468x60_2.gif",
     desc: "verified Mistress Guide",
   },
+  {
+    url: "http://www.dickievirgin.com",
+    imageURL: "http://www.dickievirgin.com/banner/dickie-main-standard.gif",
+    desc: "dickie virgin FemDom guide",
+  },
 ];
 
 export default function Footer() {
