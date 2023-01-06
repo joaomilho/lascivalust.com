@@ -32,6 +32,12 @@ const networks = [
     desc: "SinSearch Mistress Directory",
     bannerURL: "./imgs/networks/sinsearch.jpeg",
   },
+  {
+    url: "https://www.mistress-guide.com",
+    bannerURL:
+      "https://www.mistress-guide.com/images/ourpics/mistress_guide_468x60_2.gif",
+    desc: "verified Mistress Guide",
+  },
 ];
 
 export default function Footer() {
