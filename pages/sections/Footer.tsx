@@ -23,6 +23,12 @@ const links = [
 
 const networks: { url: string; desc: string; bannerURL: string }[] = [
   {
+    url: "https://www.mistressadvisor.com",
+    desc: "Mistress Advisor",
+    bannerURL:
+      "https://www.mistressadvisor.com/wp-content/uploads/2018/02/mistress-advisor-banner2.jpg",
+  },
+  {
     url: "https://www.domina.ws",
     desc: "Link to DOMINA.WS - dominatrix guide for Germany, Austria and Switzerland",
     bannerURL: "https://www.domina.ws/_main/gfx/banner01.gif",
