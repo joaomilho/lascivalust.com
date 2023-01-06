@@ -13,7 +13,9 @@ export default function GA({ id }: { id: string }) {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', '${id}');`}
+          gtag('config', '${id}');
+          gtag('event', 'conversion', {'send_to': 'AW-936758591/Jj6xCMPbpIcYEL-a174D'});
+          `}
       </Script>
     </>
   );
