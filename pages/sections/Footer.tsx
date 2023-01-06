@@ -21,6 +21,19 @@ const links = [
   },
 ];
 
+const networks = [
+  {
+    url: "https://www.domina.ws",
+    desc: "Link to DOMINA.WS - dominatrix guide for Germany, Austria and Switzerland",
+    bannerURL: "https://www.domina.ws/_main/gfx/banner01.gif",
+  },
+  {
+    url: "https://sinsearch.com",
+    desc: "SinSearch Mistress Directory",
+    bannerURL: "./imgs/networks/sinsearch.jpeg",
+  },
+];
+
 export default function Footer() {
   return (
     <footer className={styles.footer}>
@@ -42,6 +55,21 @@ export default function Footer() {
         style={{ width: 250 }}
       />
       <div>© 2022 - 2023 lacscivalust.com - All Rights Reserved.</div>
+
+      <hr />
+      {networks.map((net) => {
+        return (
+          <div key={net.url} style={{ padding: 5 }}>
+            <a href={net.url} target="_blank" title={net.desc}>
+              <img
+                src={net.bannerURL}
+                alt={net.desc}
+                style={{ maxWidth: 300 }}
+              />
+            </a>
+          </div>
+        );
+      })}
     </footer>
   );
 }
