@@ -39,8 +39,8 @@ const networks: { url: string; desc: string; bannerURL: string }[] = [
     desc: "verified Mistress Guide",
   },
   {
-    url: "http://www.dickievirgin.com",
-    bannerURL: "http://www.dickievirgin.com/banner/dickie-main-standard.gif",
+    url: "https://www.dickievirgin.com",
+    bannerURL: "https://www.dickievirgin.com/banner/dickie-main-standard.gif",
     desc: "dickie virgin FemDom guide",
   },
   {
