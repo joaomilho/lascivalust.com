@@ -43,6 +43,11 @@ const networks = [
     imageURL: "http://www.dickievirgin.com/banner/dickie-main-standard.gif",
     desc: "dickie virgin FemDom guide",
   },
+  {
+    url: "https://herrinkontakte.net",
+    imageURL: "https://herrinkontakte.net/herrinkontaktebanner02.jpg",
+    desc: "Herrin Kontakte Domina Anzeigen",
+  },
 ];
 
 export default function Footer() {
