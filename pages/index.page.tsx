@@ -35,6 +35,7 @@ export default function Index() {
 
       <CTA />
 
+      <a id="footer" className={styles.anchor} />
       <Footer />
     </Layout>
   );
