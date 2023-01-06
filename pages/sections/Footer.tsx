@@ -21,7 +21,7 @@ const links = [
   },
 ];
 
-const networks = [
+const networks: { url: string; desc: string; bannerURL: string }[] = [
   {
     url: "https://www.domina.ws",
     desc: "Link to DOMINA.WS - dominatrix guide for Germany, Austria and Switzerland",
@@ -40,12 +40,12 @@ const networks = [
   },
   {
     url: "http://www.dickievirgin.com",
-    imageURL: "http://www.dickievirgin.com/banner/dickie-main-standard.gif",
+    bannerURL: "http://www.dickievirgin.com/banner/dickie-main-standard.gif",
     desc: "dickie virgin FemDom guide",
   },
   {
     url: "https://herrinkontakte.net",
-    imageURL: "https://herrinkontakte.net/herrinkontaktebanner02.jpg",
+    bannerURL: "https://herrinkontakte.net/herrinkontaktebanner02.jpg",
     desc: "Herrin Kontakte Domina Anzeigen",
   },
 ];
@@ -73,19 +73,21 @@ export default function Footer() {
       <div>© 2022 - 2023 lacscivalust.com - All Rights Reserved.</div>
 
       <hr />
-      {networks.map((net) => {
-        return (
-          <div key={net.url} style={{ padding: 5 }}>
-            <a href={net.url} target="_blank" title={net.desc}>
-              <img
-                src={net.bannerURL}
-                alt={net.desc}
-                style={{ maxWidth: 300 }}
-              />
-            </a>
-          </div>
-        );
-      })}
+      <div style={{ opacity: 0.7 }}>
+        {networks.map((net) => {
+          return (
+            <div key={net.url} style={{ padding: 5 }}>
+              <a href={net.url} target="_blank" title={net.desc}>
+                <img
+                  src={net.bannerURL}
+                  alt={net.desc}
+                  style={{ maxWidth: 300 }}
+                />
+              </a>
+            </div>
+          );
+        })}
+      </div>
     </footer>
   );
 }
