@@ -48,6 +48,11 @@ const networks: { url: string; desc: string; bannerURL: string }[] = [
     bannerURL: "https://herrinkontakte.net/herrinkontaktebanner02.jpg",
     desc: "Herrin Kontakte Domina Anzeigen",
   },
+  {
+    url: "https://openadultdirectory.com/bdsm/",
+    bannerURL: "https://img.openadultdirectory.com/banner-img/bdsm-lg.jpg",
+    desc: "OpenAdultDirectory.com BDSM/Fetish ",
+  },
 ];
 
 export default function Footer() {
