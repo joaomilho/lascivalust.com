@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section ref={ref}>
       <cite
-        className={[styles.cite, text.className].join(" ")}
+        className={[styles.about, text.className].join(" ")}
         style={{ paddingBottom: 80 }}
       >
         <p>

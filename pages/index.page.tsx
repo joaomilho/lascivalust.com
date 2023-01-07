@@ -12,6 +12,7 @@ import {
 } from "./sections";
 import PopUp from "./components/PopUp";
 import { Layout } from "./Layout";
+import Vids from "./sections/Vids";
 
 export default function Index() {
   const device = useDevice();
@@ -22,7 +23,7 @@ export default function Index() {
       <PopUp />
       <Menu device={device} y={y} />
 
-      <Main device={device} y={y} />
+      <Main y={y} />
 
       <a id="about" className={styles.anchor} />
       <About />
@@ -32,6 +33,8 @@ export default function Index() {
 
       <a id="preferences" className={styles.anchor} />
       <Preferences />
+
+      <Vids />
 
       <CTA />
 

@@ -7,18 +7,18 @@ const links = [
     source: "Twitter",
     destination: "https://twitter.com/lascivalust",
   },
-  {
-    source: "Linktree",
-    destination: "https://linktr.ee/lascivalust",
-  },
+  // {
+  //   source: "Linktree",
+  //   destination: "https://linktr.ee/lascivalust",
+  // },
   {
     source: "Instagram",
     destination: "https://www.instagram.com/mistress_lasciva",
   },
-  {
-    source: "Substack",
-    destination: "https://lasciva.substack.com",
-  },
+  // {
+  //   source: "Substack",
+  //   destination: "https://lasciva.substack.com",
+  // },
 ];
 
 const networks: { url: string; desc: string; bannerURL: string }[] = [
@@ -63,42 +63,51 @@ const networks: { url: string; desc: string; bannerURL: string }[] = [
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
-      <ul>
-        {links.map((link, i) => {
-          return (
-            <li key={i}>
-              <SocialIcon url={link.destination} />
-              <br />
-              <a href={link.destination}>{link.source}</a>
-            </li>
-          );
-        })}
-      </ul>
-
-      <img
-        alt="Lasciva Lust"
-        src={`./imgs/signature-inverse.png`}
-        style={{ width: 250 }}
-      />
-      <div>© 2022 - 2023 lacscivalust.com - All Rights Reserved.</div>
-
-      <hr />
-      <div style={{ opacity: 0.7 }}>
-        {networks.map((net) => {
-          return (
-            <div key={net.url} style={{ padding: 5 }}>
-              <a href={net.url} target="_blank" title={net.desc}>
-                <img
-                  src={net.bannerURL}
-                  alt={net.desc}
-                  style={{ maxWidth: 300 }}
-                />
-              </a>
-            </div>
-          );
-        })}
+    <>
+      <div className={styles.social}>
+        <ul>
+          {links.map((link, i) => {
+            return (
+              <li key={i}>
+                <a href={link.destination}>
+                  <SocialIcon
+                    bgColor={"transparent"}
+                    fgColor={"black"}
+                    url={link.destination}
+                  />
+                  {/* <br />
+                {link.source} */}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
       </div>
-    </footer>
+      <footer className={styles.footer}>
+        <img
+          alt="Lasciva Lust"
+          src={`./imgs/signature-inverse.png`}
+          style={{ width: 250 }}
+        />
+        <div>© 2022 - 2023 lacscivalust.com - All Rights Reserved.</div>
+
+        <hr />
+        <div style={{ opacity: 0.7 }}>
+          {networks.map((net) => {
+            return (
+              <div key={net.url} style={{ padding: 5 }}>
+                <a href={net.url} target="_blank" title={net.desc}>
+                  <img
+                    src={net.bannerURL}
+                    alt={net.desc}
+                    style={{ maxWidth: 300 }}
+                  />
+                </a>
+              </div>
+            );
+          })}
+        </div>
+      </footer>
+    </>
   );
 }

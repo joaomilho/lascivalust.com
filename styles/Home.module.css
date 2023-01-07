@@ -142,102 +142,60 @@
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  position: relative;
+  /* position: relative; */
   margin-bottom: 40px;
+  /* border: 10px solid red; */
 }
 
 @media (min-width: 1080px) {
-  margin-bottom: 120px;
-}
-
-.bg {
-  position: relative;
-  height: 66vw;
-  width: 100%;
-  z-index: 1;
-  /* background-image: url("../public/imgs/bg-dec-10.jpeg"); */
-  background-image: url("../public/imgs/bg.jpeg");
-  background-size: cover;
-}
-
-@media (min-width: 1080px) {
-
-}
-
-.text {
-  z-index: 3;
-  position: absolute;
-  bottom: 10vh;
-  text-align: center;
-  line-height: 0;
-  /* border: 1px solid black; */
-  /* color: black; */
-  color: white;
-  /* color: red; */
-  line-height: 0;
-  
-  transform: scale(1.232);
-  mix-blend-mode: overlay;
-  
-}
-
-
-@media (min-width: 1080px) {
-  .text {
-    z-index: 3;
-    position: absolute;
-    top: 100vh;
-    text-align: center;
-    color: black;
-    color: rgba(255,255,255,2);
-    line-height: 0;
-    
-    transform: scale(1.232);
-    mix-blend-mode: overlay;
-    
+  .main {
+    /* margin-bottom: 0px; */
+    padding: 100px;
   }
 }
 
-@media (min-width: 1440px) {
-  /* .text {
-    background-image: linear-gradient(0deg, #500, #000);
-    background-size: 100%;
-    background-clip: text;
 
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  } */
+
+
+.mainImage {
+  
+  width: 100%;
+}
+
+@media (min-width: 1100px) {
+  .mainImage {
+    max-width: 1100px;
+    
+  }  
 }
 
 
 .title {
   font-family: "e";
-  margin: 0;
-  line-height: 0;
-  font-size: 18vw;
+  font-size: 2.5rem;
   font-weight: 100;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  color: black;
 }
 
 .pic {
   width: 100%;
   z-index: 1;
-  /* margin-bottom: 40px; */
+  
 }
 
-.cite {
+.about {
   font-style: normal;
   margin: 20px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 1.6em;
-  
   display: block;
 }
 
 @media (min-width: 1080px) {
-  .cite {
-    margin: 80px 20%;
-    font-size: 2em;
+  .about {
+    max-width: 1000px;
+    margin:auto;
+    font-size: 1.4em;
   }
 }
 
@@ -262,16 +220,12 @@
   top: -80px;
 }
 
-/* .gallery {
-  margin-bottom: 100px;
-  column-gap: 40px;
-
-  column-count: 3;
+.gallery {
+  max-width: 1100px;
+  margin: auto;
 }
 
-.gallery img {
-  margin-bottom: 40px;
-} */
+
 
 .footer {
   background: #112;
@@ -284,10 +238,10 @@
   text-align: center;
 }
 
-.footer ul{
+.social ul{
   list-style: none;
   padding: 0;
-  margin: 0 0 40px;
+  margin: 0 0 180px;
   display: flex;
   /* align-items: center; */
   flex-flow: row nowrap;
@@ -296,7 +250,19 @@
 
 }
 
-.footer ul li{ 
-  padding: 20px;
-  width: 120px;
+.social ul li{ 
+  padding: 5px;
+  /* width: 120px; */
+}
+
+.vids {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.vid {
+  width: 350px;
+  height: 640px;
+  display: inline-block;
+  padding: 10px;
 }
