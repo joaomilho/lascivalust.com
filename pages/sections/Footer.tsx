@@ -59,6 +59,11 @@ const networks: { url: string; desc: string; bannerURL: string }[] = [
     bannerURL: "https://img.openadultdirectory.com/banner-img/bdsm-lg.jpg",
     desc: "OpenAdultDirectory.com BDSM/Fetish ",
   },
+  {
+    url: "https://www.galeriedesade.com",
+    bannerURL: "https://www.galeriedesade.com/images/banner/banner5.jpg",
+    desc: "BDSM-Bizarr Galerie",
+  },
 ];
 
 export default function Footer() {
