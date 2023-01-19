@@ -68,7 +68,7 @@ export default function Menu({
 
         <li>
           <a
-            href="https://h6o5rhe132.execute-api.eu-central-1.amazonaws.com/applications"
+            href="mailto:lascivalady@gmail.com"
             onClick={click(Screen.submit)}
             className={styles.applyButtonMenu}
           >
