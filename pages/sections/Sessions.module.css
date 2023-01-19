@@ -6,11 +6,12 @@
 @media (min-width: 1080px) {
   .sessions {
     font-size: 2.5rem;
+    padding: 0.6em var(--padding);
   }
 }
 
 .sessions p {
-  padding: 0.6em var(--padding);
+  padding: 0.6em 20px;
   max-width: 1200px;
   margin: 0;
 }
