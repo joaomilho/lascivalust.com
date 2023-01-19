@@ -33,11 +33,11 @@ export function Layout({ children }: { children: ReactNode }) {
           description,
           images: [
             {
-              url: "https://lascivalust.com/imgs/main.jpg",
-              width: 2320,
-              height: 3088,
+              url: "https://lascivalust.com/imgs/twitter.png",
+              width: 2880,
+              height: 1800,
               alt: "Lasciva Lust",
-              type: "image/jpeg",
+              type: "image/png",
             },
           ],
           siteName: "LascivaLust.com",
