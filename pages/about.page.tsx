@@ -23,9 +23,10 @@ export default function Index() {
       <PopUp />
       <Menu device={device} y={y} show />
 
-      <h1 className={text.className} style={{ padding: `80px 40px 40px 40px` }}>
+      {/* <div style={{ padding: 80 }}></div> */}
+      {/* <h1 className={text.className} style={{ padding: `80px 40px 40px 40px` }}>
         About
-      </h1>
+      </h1> */}
       <About />
 
       <Footer />

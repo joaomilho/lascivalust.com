@@ -1,18 +1,12 @@
-import styles from "../../styles/Home.module.css";
-import { text } from "../../fonts";
+import styles from "./Menu.module.css";
 import type { Device } from "../../hooks/useDevice";
-
-const breakpoint: Record<Device, number> = {
-  tablet: 800,
-  desktop: 800,
-  mobile: 240,
-  unknown: 240,
-};
+import { useState } from "react";
+import { Divide as Hamburger } from "hamburger-react";
 
 enum Screen {
   about = "about",
   gallery = "gallery",
-  preferences = "preferences",
+  sessions = "sessions",
   submit = "submit",
 }
 
@@ -29,6 +23,8 @@ export default function Menu({
   device: Device;
   show: boolean;
 }) {
+  const [open, setOpen] = useState<boolean>(false);
+
   function click(screen: Screen) {
     return () => {
       window.gtag("event", `Click ${screen} menu`, {
@@ -36,38 +32,47 @@ export default function Menu({
         title: screen,
         screen_name: screen,
       });
+      setOpen(false);
     };
   }
 
   return (
-    <nav
-      className={styles.nav}
-      style={show || y > breakpoint[device] ? { top: 0 } : {}}
-    >
-      <span className={styles.logo}>Lasciva Lust</span>
+    <nav className={[styles.nav, open ? styles.open : styles.closed].join(" ")}>
+      <div
+        className={styles.logo}
+        onClick={() => {
+          setOpen(!open);
+        }}
+      >
+        <Hamburger toggled={open} toggle={setOpen} />
+        <div>Lasciva Lust</div>
+      </div>
       <ul className={styles.menu}>
         <li>
           <a href="/#about" onClick={click(Screen.about)}>
             About
           </a>
         </li>
+
+        <li>
+          <a href="/#sessions" onClick={click(Screen.sessions)}>
+            Sessions
+          </a>
+        </li>
+
         <li>
           <a href="/#gallery" onClick={click(Screen.gallery)}>
             Gallery
           </a>
         </li>
-        <li>
-          <a href="/#preferences" onClick={click(Screen.preferences)}>
-            Preferences
-          </a>
-        </li>
+
         <li>
           <a
             href="https://h6o5rhe132.execute-api.eu-central-1.amazonaws.com/applications"
             onClick={click(Screen.submit)}
             className={styles.applyButtonMenu}
           >
-            Submit
+            Surrender
           </a>
         </li>
       </ul>

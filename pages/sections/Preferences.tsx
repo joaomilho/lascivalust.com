@@ -1,5 +1,5 @@
 import styles from "../../styles/Home.module.css";
-import { text } from "../../fonts";
+// import { text } from "../../fonts";
 import useInView from "../../hooks/useInView";
 
 export const preferences = [
@@ -21,6 +21,8 @@ export const preferences = [
   "Cuckolding",
   "Tease & Denial",
   "FinDom",
+  "BB & CBT",
+
   "Electro-Play",
 ];
 
@@ -34,7 +36,7 @@ export default function Preferences() {
   const ref = useInView("preferences");
 
   return (
-    <section ref={ref} className={[styles.protocol, text.className].join(" ")}>
+    <section ref={ref} className={[styles.protocol].join(" ")}>
       <table cellPadding={0} cellSpacing={0} style={{ width: "100%" }}>
         <tbody>
           <tr>

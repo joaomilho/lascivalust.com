@@ -1,0 +1,17 @@
+.sessions {
+  line-height: 1.4em;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 1080px) {
+  .sessions {
+    font-size: 2.5rem;
+  }
+}
+
+.sessions p {
+  padding: 0.6em var(--padding);
+  max-width: 1200px;
+  margin: 0;
+}
+

@@ -1,0 +1,138 @@
+.nav {
+    position: fixed;
+    
+    z-index: 6;
+    top: 0;
+    left: 0;
+    /* background: black; */
+    /* color: white; */
+    width: 100%;
+    
+    mix-blend-mode: difference;
+    
+    font-family: "FreightDispProMedium";
+    /* transition: all 1s; */
+   
+  }
+
+
+
+  /* | "color"
+  | "color-burn"
+  | "color-dodge"
+  | "darken"
+  | "difference"
+  | "exclusion"
+  | "hard-light"
+  | "hue"
+  | "lighten"
+  | "luminosity"
+  | "multiply"
+  | "normal"
+  | "overlay"
+  | "saturation"
+  | "screen"
+  | "soft-light"; */
+
+.nav.open {
+
+     height: 100%;
+    background: rgba(0,0,0,0.9);
+    mix-blend-mode: normal;
+  }
+
+  .nav.closed {
+     /* height: 200px; */
+    /* padding-top: 0px; */
+    /* height: 100%; */
+    background: none;
+  }
+
+  .nav.open .menu {
+    display: block;
+  }
+  
+  .nav.open .logo {
+    color: white !important;
+    
+  }
+  /* //   backgroundPosition: "50% 50%", */
+          
+  
+  .menu {
+    display: none;
+    margin: 0;
+    list-style: 0;
+    padding: 0;
+    /* float: right; */
+    align-items: center;
+    font-size: 0.75em;
+    
+  }
+  
+  .menu li {
+    /* display: inline-block; */
+    vertical-align: middle;
+  }
+  
+  .menu li a {
+    mix-blend-mode: difference;
+    /* line-height: 20px; */
+    padding: 20px 8px;
+    color :#fff;
+    font-size: 88px;
+    /* display: inline-block; */
+    
+    /* background: white; */
+    /* letter-spacing: 0px; */
+    transition: all .2s ease-in-out;
+   /* display: block; */
+    /* transform: all 1s; */
+  }
+
+  
+
+  .logo {
+    cursor: pointer;
+    
+    
+    
+    font-style: italic;
+  color: white;
+    
+  
+  
+    font-size: 32px !important;
+  
+    
+    padding: 20px;
+  }
+  .logo div {
+    margin: 0;
+    padding-left: 10px;
+    /* line-height: 0; */
+    display: inline-block;
+    /* border: 2px solid red; */
+    vertical-align: middle;
+    /* float: left; */
+  }
+  
+  @media (min-width: 1080px) {
+    .logo {
+      font-size: 28px;
+    }
+  
+    .menu {
+      font-size: 1em;
+    }
+  
+    .menu li a {
+      padding: 20px;
+    }
+  }
+  
+
+  .applyButtonMenu {
+    /* background-color: rgba(214, 12, 16, 0.4); */
+    color: red !important;
+  }

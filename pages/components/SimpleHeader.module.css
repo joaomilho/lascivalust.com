@@ -1,0 +1,32 @@
+.simpleHeader {
+  mix-blend-mode: difference;
+  z-index: 20000;
+}
+
+.simpleHeader h1 {
+  padding: 20px;
+  font-family: FreightDispProLight;
+  color: red;
+  font-size: 5rem;
+  line-height: 2rem;
+  margin: 0;
+  position: relative;
+  z-index: 2000;
+  top: -50px;
+}
+
+
+.satan {
+  color: rgba(255, 255, 255, 0.05);
+  font-style: normal;
+}
+
+
+@media (min-width: 1080px) {
+  .simpleHeader h1 {
+    padding: var(--padding);
+    font-size: 14rem;
+    line-height: 0em;
+    top: 0px;
+  }
+}

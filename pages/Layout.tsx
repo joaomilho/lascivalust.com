@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { NextSeo } from "next-seo";
 
-import styles from "../styles/Home.module.css";
 import { preferences } from "./sections/Preferences";
 import React, { ReactComponentElement, ReactNode } from "react";
 
@@ -23,7 +22,7 @@ const keywords = [
 
 export function Layout({ children }: { children: ReactNode }) {
   return (
-    <div className={styles.container}>
+    <div>
       <NextSeo
         title={title}
         description={description}

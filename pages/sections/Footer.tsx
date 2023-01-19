@@ -1,6 +1,8 @@
 import styles from "../../styles/Home.module.css";
-import { TwitterIcon, InstapaperIcon } from "next-share";
+
 import { SocialIcon } from "react-social-icons";
+import { SectionMarquee } from "../components/SectionMarquee";
+import ComposedBlends from "../components/ComposedBlends";
 
 const links = [
   {
@@ -77,7 +79,7 @@ export default function Footer() {
                 <a href={link.destination}>
                   <SocialIcon
                     bgColor={"transparent"}
-                    fgColor={"black"}
+                    fgColor={"white"}
                     url={link.destination}
                   />
                   {/* <br />
@@ -88,16 +90,25 @@ export default function Footer() {
           })}
         </ul>
       </div>
+
+      {/* <ComposedBlends /> */}
+      <SectionMarquee />
       <footer className={styles.footer}>
-        <img
+        {/* <img
           alt="Lasciva Lust"
           src={`./imgs/signature-inverse.png`}
           style={{ width: 250 }}
-        />
-        <div>© 2022 - 2023 lacscivalust.com - All Rights Reserved.</div>
+        /> */}
+        <div style={{ fontFamily: "FreightDispProMedium" }}>
+          © 2022 - 2023 lacscivalust.com - All Rights Reserved.
+        </div>
 
         <hr />
-        <div style={{ opacity: 0.7 }}>
+        <div
+          style={{
+            filter: `grayscale(1) contrast(5) brightness(0.6)  `,
+          }}
+        >
           {networks.map((net) => {
             return (
               <div key={net.url} style={{ padding: 5 }}>
@@ -105,7 +116,7 @@ export default function Footer() {
                   <img
                     src={net.bannerURL}
                     alt={net.desc}
-                    style={{ maxWidth: 300 }}
+                    style={{ maxWidth: 120 }}
                   />
                 </a>
               </div>
