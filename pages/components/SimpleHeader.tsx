@@ -8,7 +8,7 @@ export default function SimpleHeader({ text }: { text: string }) {
   return (
     <Parallax
       easing={"easeInOut"}
-      speed={device === "desktop" ? -10 : -6}
+      speed={device === "desktop" ? -10 : -4}
       className={styles.simpleHeader}
     >
       <h1>

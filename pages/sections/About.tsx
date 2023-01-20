@@ -108,10 +108,7 @@ export default function About() {
           </ResponsiveMasonry>
         </div>
 
-        <div style={{ display: "flex" }}>
-          <Video width="50%" video={`smoke-retro`}></Video>
-          <Video width="50%" video={`smoke-cartoon`}></Video>
-        </div>
+        <Video video={`smoke-retro`}></Video>
       </div>
     </section>
   );

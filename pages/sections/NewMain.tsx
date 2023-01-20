@@ -1,5 +1,9 @@
+import { useDevice } from "../../hooks/useDevice";
 import { Video } from "../components";
 
 export default function NewMain() {
-  return <Video video={`noir`} />;
+  const device = useDevice();
+  const video = device === "desktop" ? `noir` : `noir-portrait`;
+
+  return <Video video={video} />;
 }

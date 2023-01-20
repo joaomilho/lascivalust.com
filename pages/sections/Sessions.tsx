@@ -1,4 +1,4 @@
-import { Header } from "../components";
+import { Header, Video } from "../components";
 import CTA from "./CTA";
 import styles from "./Sessions.module.css";
 import Preferences from "./Preferences";
@@ -27,6 +27,9 @@ export default function Sessions() {
         </p>
       </div>
       <CTA />
+
+      <Video video={`smoke-cartoon`}></Video>
+
       {/* <Preferences /> */}
     </>
   );
