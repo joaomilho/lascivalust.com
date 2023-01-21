@@ -3,6 +3,7 @@ import styles from "../../styles/Home.module.css";
 import { SocialIcon } from "react-social-icons";
 import { SectionMarquee } from "../components/SectionMarquee";
 import ComposedBlends from "../components/ComposedBlends";
+import Image from "next/image";
 
 const links = [
   {
@@ -117,6 +118,8 @@ export default function Footer() {
                     src={net.bannerURL}
                     alt={net.desc}
                     style={{ maxWidth: 120 }}
+                    // @ts-ignore
+                    fetchPriority={"low"}
                   />
                 </a>
               </div>

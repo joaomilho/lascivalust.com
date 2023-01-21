@@ -13,7 +13,6 @@ export default function Video({
 }) {
   return (
     <video
-      id="d126ffa8-174e-c823-c64e-5fd338f3d981-video"
       autoPlay
       loop
       muted
@@ -21,14 +20,21 @@ export default function Video({
       data-wf-ignore="true"
       data-object-fit="cover"
       className={styles.video}
-      style={{
-        width,
-      }}
-      poster={`/vids/${video}.jpg`}
+      style={{ width }}
+      poster={`/vids/${video}.webp`}
     >
-      <source src={`./vids/${video}.mov`} data-wf-ignore="true"></source>
+      <source
+        src={`./vids/${video}.webm`}
+        type="video/webm"
+        data-wf-ignore="true"
+      ></source>
+      <source
+        src={`./vids/${video}.mov`}
+        type="video/quicktime"
+        data-wf-ignore="true"
+      ></source>
       <img
-        src={`/vids/${video}.jpg`}
+        src={`/vids/${video}.png`}
         title="Your browser does not support the <video> tag"
       />
     </video>

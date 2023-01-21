@@ -2,7 +2,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { Device } from "../../hooks/useDevice";
 import useInView from "../../hooks/useInView";
 import styles from "../../styles/Home.module.css";
-import { Header } from "../components";
+import { Header, Image } from "../components";
 
 const pad: Record<Device, number> = {
   tablet: 10,
@@ -23,54 +23,15 @@ export default function Gallery({ y, device }: { y: number; device: Device }) {
         style={{ padding: `80px 0` }}
       >
         <Masonry gutter={"2px"}>
-          {/* <img
-            alt="Lasciva Lust"
-            src={`./imgs/bg-dec-10-grain.jpg`}
-            className={styles.pic}
-          /> */}
-          <img alt="Lasciva Lust" src={`./imgs/4.jpg`} className={styles.pic} />
-          <img
-            alt="Lasciva Lust"
-            src={`./imgs/9.jpeg`}
-            className={styles.pic}
-          />
-          <img
-            alt="Lasciva Lust"
-            src={`./imgs/12.jpg`}
-            className={styles.pic}
-          />
-          {/*  */}
-          <img alt="Lasciva Lust" src={`./imgs/7.jpg`} className={styles.pic} />
-          <img
-            alt="Lasciva Lust"
-            src={`./imgs/10.jpg`}
-            className={styles.pic}
-          />
-
-          <img
-            alt="Lasciva Lust"
-            src={`./imgs/11.jpeg`}
-            className={styles.pic}
-          />
-
-          <img
-            alt="Lasciva Lust"
-            src={`./imgs/13.jpg`}
-            className={styles.pic}
-          />
+          <Image image={`4`} className={styles.pic} />
+          <Image image={`9`} className={styles.pic} />
+          <Image image={`12`} className={styles.pic} />
+          <Image image={`7`} className={styles.pic} />
+          <Image image={`10`} className={styles.pic} />
+          <Image image={`11`} className={styles.pic} />
+          <Image image={`13`} className={styles.pic} />
           <div />
-          <img alt="Lasciva Lust" src={`./imgs/6.jpg`} className={styles.pic} />
-
-          {/* <img alt="Lasciva Lust" src={`./imgs/4.jpg`} className={styles.pic} /> */}
-          {/* <img alt="Lasciva Lust" src={`./imgs/8.jpg`} className={styles.pic} />
-          <img alt="Lasciva Lust" src={`./imgs/7.jpg`} className={styles.pic} />
-          <img alt="Lasciva Lust" src={`./imgs/6.jpg`} className={styles.pic} />
-          <img alt="Lasciva Lust" src={`./imgs/9.jpg`} className={styles.pic} /> */}
-          {/* <img alt="Lasciva Lust" src={`./imgs/3.jpg`} className={styles.pic} /> */}
-          {/* <img alt="Lasciva Lust" src={`./imgs/1.jpg`} className={styles.pic} /> */}
-          {/* <img alt="Lasciva Lust" src={`./imgs/2.jpg`} className={styles.pic} />
-          <img alt="Lasciva Lust" src={`./imgs/0.jpg`} className={styles.pic} />
-          <img alt="Lasciva Lust" src={`./imgs/5.jpg`} className={styles.pic} /> */}
+          <Image image={`6`} className={styles.pic} />
         </Masonry>
       </ResponsiveMasonry>
     </section>
