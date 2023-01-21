@@ -53,4 +53,10 @@ cwebp 10.jpg -o 10.webp
 cwebp 11.jpg -o 11.webp
 cwebp 12.jpg -o 12.webp
 cwebp 13.jpg -o 13.webp
+
+cwebp sinsearch.jpeg -o sinsearch.webp
+cwebp mistress_guide_468x60_2.gif -o mistress_guide.webp
+cwebp bdsm-lg.jpg -o openadultdirectory.webp
+cwebp herrinkontaktebanner02.jpg -o herrinkontakte.webp
+cwebp mistress-advisor-banner2.jpg -o mistress-advisor.webp
 ```

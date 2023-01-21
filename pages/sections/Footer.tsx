@@ -28,38 +28,36 @@ const networks: { url: string; desc: string; bannerURL: string }[] = [
   {
     url: "https://www.mistressadvisor.com",
     desc: "Mistress Advisor",
-    bannerURL:
-      "https://www.mistressadvisor.com/wp-content/uploads/2018/02/mistress-advisor-banner2.jpg",
+    bannerURL: "./imgs/network/mistress-advisor.webp",
   },
   {
     url: "https://www.domina.ws",
     desc: "Link to DOMINA.WS - dominatrix guide for Germany, Austria and Switzerland",
-    bannerURL: "https://www.domina.ws/_main/gfx/banner01.gif",
+    bannerURL: "./imgs/networks/domina.gif",
   },
   {
     url: "https://sinsearch.com",
     desc: "SinSearch Mistress Directory",
-    bannerURL: "./imgs/networks/sinsearch.jpeg",
+    bannerURL: "./imgs/networks/sinsearch.webp",
   },
   {
     url: "https://www.mistress-guide.com",
-    bannerURL:
-      "https://www.mistress-guide.com/images/ourpics/mistress_guide_468x60_2.gif",
+    bannerURL: "./imgs/network/mistress_guide.webp",
     desc: "verified Mistress Guide",
   },
   {
     url: "https://www.dickievirgin.com",
-    bannerURL: "https://www.dickievirgin.com/banner/dickie-main-standard.gif",
+    bannerURL: "./imgs/network/dickie.gif",
     desc: "dickie virgin FemDom guide",
   },
   {
     url: "https://herrinkontakte.net",
-    bannerURL: "https://herrinkontakte.net/herrinkontaktebanner02.jpg",
+    bannerURL: "./imgs/network/herrinkontakte.webp",
     desc: "Herrin Kontakte Domina Anzeigen",
   },
   {
     url: "https://openadultdirectory.com/bdsm/",
-    bannerURL: "https://img.openadultdirectory.com/banner-img/bdsm-lg.jpg",
+    bannerURL: "./imgs/network/openadultdirectory.webp",
     desc: "OpenAdultDirectory.com BDSM/Fetish ",
   },
   {
@@ -116,6 +114,7 @@ export default function Footer() {
                 <a href={net.url} target="_blank" title={net.desc}>
                   <img
                     src={net.bannerURL}
+                    loading="lazy"
                     alt={net.desc}
                     style={{ maxWidth: 120 }}
                     // @ts-ignore

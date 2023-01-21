@@ -34,7 +34,7 @@ export default function Video({
         data-wf-ignore="true"
       ></source>
       <img
-        src={`/vids/${video}.png`}
+        src={`/vids/${video}.webp`}
         title="Your browser does not support the <video> tag"
       />
     </video>
