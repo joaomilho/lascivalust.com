@@ -1,13 +1,11 @@
 import { Header, Video } from "../components";
 import CTA from "./CTA";
-import styles from "./Sessions.module.css";
-import Preferences from "./Preferences";
-import ComposedBlends from "../components/ComposedBlends";
+import styles from "./About.module.css";
 
 export default function Sessions() {
   return (
     <>
-      <div className={styles.sessions}>
+      <div className={styles.about}>
         <Header text="Sessions" />
 
         <p>
@@ -27,10 +25,7 @@ export default function Sessions() {
         </p>
       </div>
       <CTA />
-
       <Video video={`smoke-cartoon`}></Video>
-
-      {/* <Preferences /> */}
     </>
   );
 }

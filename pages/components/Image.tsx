@@ -1,6 +1,6 @@
 // import styles from "../../styles/Home.module.css";
 
-export default function Video({
+export default function Image({
   image,
   className,
 }: {
