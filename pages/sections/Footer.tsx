@@ -15,6 +15,11 @@ const links = [
 
 const networks: { url: string; desc: string; bannerURL: string }[] = [
   {
+    url: "https://www.ubergirls.me/city/Berlin",
+    desc: "LoveHub",
+    bannerURL: "lovehub.webp",
+  },
+  {
     url: "https://www.mistressadvisor.com",
     desc: "Mistress Advisor",
     bannerURL: "mistress-advisor.webp",
