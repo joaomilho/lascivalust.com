@@ -6,3 +6,4 @@ export { default as Preferences } from "./Preferences";
 export { default as Menu } from "./Menu";
 export { default as Footer } from "./Footer";
 export { default as Sessions } from "./Sessions";
+export { default as Tributes } from "./Tributes";

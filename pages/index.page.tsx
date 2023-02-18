@@ -1,7 +1,15 @@
 import styles from "../styles/Home.module.css";
 import { useDevice } from "../hooks/useDevice";
 import { useWindowScrollPosition } from "rooks";
-import { Menu, About, Gallery, CTA, Footer, Sessions } from "./sections";
+import {
+  Menu,
+  About,
+  Gallery,
+  CTA,
+  Footer,
+  Sessions,
+  Tributes,
+} from "./sections";
 import PopUp from "./components/PopUp";
 import { Layout } from "./Layout";
 import Vids from "./sections/Vids";

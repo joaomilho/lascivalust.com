@@ -188,3 +188,8 @@ hr {
   border-bottom: 1px solid rgba(0,0,0,0.1);
   /* margin: 60px auto; */
 }
+
+h4 {
+  font-family: 'FreightDispProBlack';
+  font-size: 4rem;
+}

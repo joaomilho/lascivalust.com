@@ -24,14 +24,14 @@ export default function Gallery({ y, device }: { y: number; device: Device }) {
       >
         <Masonry gutter={"2px"}>
           <Image image={`4`} className={styles.pic} />
-          <Image image={`9`} className={styles.pic} />
+          {/* <Image image={`9`} className={styles.pic} /> */}
           <Image image={`12`} className={styles.pic} />
           <Image image={`7`} className={styles.pic} />
           <Image image={`10`} className={styles.pic} />
           <Image image={`11`} className={styles.pic} />
           <Image image={`13`} className={styles.pic} />
-          <div />
-          <Image image={`6`} className={styles.pic} />
+          {/* <div /> */}
+          {/* <Image image={`6`} className={styles.pic} /> */}
         </Masonry>
       </ResponsiveMasonry>
     </section>

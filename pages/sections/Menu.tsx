@@ -2,12 +2,14 @@ import styles from "./Menu.module.css";
 import type { Device } from "../../hooks/useDevice";
 import { useState } from "react";
 import { Divide as Hamburger } from "hamburger-react";
+import { mailto } from "../config";
 
 enum Screen {
   about = "about",
   gallery = "gallery",
   sessions = "sessions",
   submit = "submit",
+  tributes = "tributes",
 }
 
 Menu.defaultProps = {
@@ -61,6 +63,12 @@ export default function Menu({
         </li>
 
         <li>
+          <a href="/#tributes" onClick={click(Screen.tributes)}>
+            Tributes
+          </a>
+        </li>
+
+        <li>
           <a href="/#gallery" onClick={click(Screen.gallery)}>
             Gallery
           </a>
@@ -68,7 +76,7 @@ export default function Menu({
 
         <li>
           <a
-            href="mailto:lascivalady@gmail.com"
+            href={mailto}
             onClick={click(Screen.submit)}
             className={styles.applyButtonMenu}
           >
