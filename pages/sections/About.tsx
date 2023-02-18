@@ -102,7 +102,7 @@ export default function About() {
                 <br />
                 <b>Spotify</b>
                 <br />
-                <Spotify playlist="1fuxoMrNUSOeIfYTuhHQgc" />
+                <Spotify playlist="3kL0UMAMzai8AawPcjVrC4" />
               </p>
             </Masonry>
           </ResponsiveMasonry>
