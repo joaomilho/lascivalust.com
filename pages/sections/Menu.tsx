@@ -63,12 +63,6 @@ export default function Menu({
         </li>
 
         <li>
-          <a href="/#tributes" onClick={click(Screen.tributes)}>
-            Tributes
-          </a>
-        </li>
-
-        <li>
           <a href="/#gallery" onClick={click(Screen.gallery)}>
             Gallery
           </a>
