@@ -1,6 +1,7 @@
 import styles from "../../styles/Home.module.css";
 // import { text } from "../../fonts";
 import useInView from "../../hooks/useInView";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 export const preferences = [
   "High Protocol",
@@ -37,47 +38,51 @@ export default function Preferences() {
 
   return (
     <section ref={ref} className={[styles.protocol].join(" ")}>
-      <table cellPadding={0} cellSpacing={0} style={{ width: "100%" }}>
-        <tbody>
-          <tr>
-            <td>
-              <b>Preferences</b>
-              <br />
-              <br />
-              <ul className={styles.list}>
-                {preferences.map((pref) => {
-                  return (
-                    <li key={pref}>
-                      {pref}
-                      {detail[pref] ? (
+      <ResponsiveMasonry
+        columnsCountBreakPoints={{ 0: 1, 1200: 2 }}
+        style={{ padding: 20 }}
+      >
+        <Masonry gutter={"0px"} style={{ padding: 0 }}>
+          <p>
+            <b>Preferences</b>
+            <br />
+            <br />
+            <ul className={styles.list}>
+              {preferences.map((pref) => {
+                return (
+                  <li key={pref}>
+                    {pref}
+                    {detail[pref] ? (
+                      <>
                         <small style={{ color: "#666" }}>
                           {" "}
                           ({detail[pref]})
                         </small>
-                      ) : null}
-                    </li>
-                  );
-                })}
-              </ul>
-            </td>
-            <td>
-              <b>Hard limits</b>
-              <br />
-              <br />
-              <ul className={styles.listNope}>
-                <li>Brown Showers </li>
-                <li>Blood Play</li>
-                <li>Cultural/Religious humiliation </li>
-                <li>Emotional Labor </li>
-                <li>little/ABDL</li>
-                <li>Heavy Medical Play</li>
-                <li>Male gratification</li>
-                <li>Degradation</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+                      </>
+                    ) : null}
+                  </li>
+                );
+              })}
+            </ul>
+          </p>
+
+          <p>
+            <b>Hard limits</b>
+            <br />
+            <br />
+            <ul className={styles.listNope}>
+              <li>Brown Showers </li>
+              <li>Blood Play</li>
+              <li>Cultural/Religious humiliation </li>
+              <li>Emotional Labor </li>
+              <li>little/ABDL</li>
+              <li>Heavy Medical Play</li>
+              <li>Male gratification</li>
+              <li>Degradation</li>
+            </ul>
+          </p>
+        </Masonry>
+      </ResponsiveMasonry>
     </section>
   );
 }

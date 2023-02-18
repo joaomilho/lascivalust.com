@@ -16,19 +16,8 @@
   font-size: 1.6rem;
 }
 
-.protocol table {
-  width: 100%;
-}
-
-.protocol table td {
-  padding: 20px;
-  vertical-align: top;
-}
 
 @media (min-width: 1080px) {
-  .protocol table td {
-    padding: 0px;
-  }
 
   .protocol {
     font-size: 2.5rem;
