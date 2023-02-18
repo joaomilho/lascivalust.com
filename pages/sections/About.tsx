@@ -45,7 +45,7 @@ export default function About() {
 
         <div className={styles.knowMore}>
           <ResponsiveMasonry
-            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}
+            columnsCountBreakPoints={{ 350: 1, 750: 2, 1200: 4 }}
             style={{ padding: 0 }}
           >
             <Masonry gutter={"0px"} style={{ padding: 0 }}>

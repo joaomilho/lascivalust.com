@@ -64,10 +64,7 @@ export default function Sessions() {
 
           <p>
             <h4>On Tour</h4>
-            This is my 2023 schedule for sessions outside Berlin:
-          </p>
 
-          <p>
             <b>Hamburg</b>
             <span style={{ color: "#333" }}> // </span>
             <i>April 20 - 23</i>
