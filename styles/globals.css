@@ -190,6 +190,9 @@ hr {
 }
 
 h4 {
-  font-family: 'FreightDispProBlack';
-  font-size: 4rem;
+  font-family: 'FreightDispProLight';
+  font-style: italic;
+  font-size: 3rem;
+  padding: 0;
+  margin: 2rem 0 1rem 0;
 }

@@ -9,7 +9,7 @@ export default function Sessions() {
     <>
       <div className={styles.about}>
         <Header text="Sessions" />
-        <div className={styles.sessions} style={{ marginTop: 120 }}>
+        <div className={styles.sessions}>
           <p>
             To request a session, send Me an email to{" "}
             <a className={styles.emailLink} href={mailto}>
