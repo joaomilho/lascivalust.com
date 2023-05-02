@@ -1,5 +1,5 @@
 import styles from "../../styles/Home.module.css";
-// import { text } from "../../fonts";
+
 import useInView from "../../hooks/useInView";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 

@@ -92,7 +92,11 @@ export default function Footer() {
           src={`./imgs/signature-inverse.png`}
           style={{ width: 250 }}
         /> */}
-        <div style={{ fontFamily: "FreightDispProMedium" }}>
+        <div
+          style={{
+            fontFamily: "freight-display-pro",
+          }}
+        >
           © 2022 - 2023 lacscivalust.com - All Rights Reserved.
         </div>
 

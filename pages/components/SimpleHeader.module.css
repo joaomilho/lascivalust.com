@@ -5,7 +5,8 @@
 
 .simpleHeader h1 {
   padding: 20px;
-  font-family: FreightDispProLight;
+  
+  font-family: "freight-display-pro", serif;
   color: red;
   font-size: 5rem;
   line-height: 2rem;

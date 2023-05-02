@@ -11,7 +11,8 @@ export function SectionMarquee({
   return (
     <Marquee
       style={{
-        fontFamily: "FreightDispProBlack",
+        // fontFamily: "FreightDispProBlack",
+        fontFamily: "freight-display-pro",
         fontWeight: 900,
         fontSize: 66,
         background: "#000",
