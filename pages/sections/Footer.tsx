@@ -116,7 +116,7 @@ export default function Footer() {
                     alt={net.desc}
                     style={{ maxWidth: 120 }}
                     // @ts-ignore
-                    fetchPriority={"low"}
+                    fetchpriority={"low"}
                   />
                 </a>
               </div>

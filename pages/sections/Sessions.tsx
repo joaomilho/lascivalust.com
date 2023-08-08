@@ -29,16 +29,12 @@ export default function Sessions() {
             <tr>
               <td>
                 <p>
-                  <b className={styles.inPersonTribute}>€300</b>/h
-                  <br />
                   <small style={{ color: `#999` }}>In Person Sessions</small>
                 </p>
               </td>
               <td>
                 <p>
-                  <b className={styles.virtualTribute}>€180</b>/30 min
-                  <br />
-                  <small style={{ color: `#999` }}>Virtual Play-Space</small>
+                  <b className={styles.inPersonTribute}>€300</b>/h
                 </p>
               </td>
             </tr>
@@ -54,10 +50,6 @@ export default function Sessions() {
             <h4>In Berlin</h4>I work at the best studios in Berlin:{" "}
             <a href="https://studioluxberlin.de/team/profil/lasciva-lust.html">
               Studio Lux
-            </a>{" "}
-            ,{" "}
-            <a href="https://sweet-tabu.com/ladies/lady-lasciva-lust/">
-              Sweet Taboo
             </a>{" "}
             and other exclusive locations.
           </p>

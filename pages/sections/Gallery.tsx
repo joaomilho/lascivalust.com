@@ -27,9 +27,26 @@ export default function Gallery({ y, device }: { y: number; device: Device }) {
           {/* <Image image={`9`} className={styles.pic} /> */}
           <Image image={`12`} className={styles.pic} />
           <Image image={`7`} className={styles.pic} />
+          <Image image={`13`} className={styles.pic} />
           <Image image={`10`} className={styles.pic} />
           <Image image={`11`} className={styles.pic} />
-          <Image image={`13`} className={styles.pic} />
+
+          <Image image={`21`} className={styles.pic} />
+          <Image image={`23`} className={styles.pic} />
+          <Image image={`22`} className={styles.pic} />
+          <Image image={`26`} className={styles.pic} />
+          <Image image={`24`} className={styles.pic} />
+          <Image image={`25`} className={styles.pic} />
+
+          <Image image={`33`} className={styles.pic} />
+          <Image image={`27`} className={styles.pic} />
+          <Image image={`28`} className={styles.pic} />
+          <Image image={`31`} className={styles.pic} />
+          <Image image={`29`} className={styles.pic} />
+          <Image image={`30`} className={styles.pic} />
+
+          <Image image={`32`} className={styles.pic} />
+
           {/* <div /> */}
           {/* <Image image={`6`} className={styles.pic} /> */}
         </Masonry>

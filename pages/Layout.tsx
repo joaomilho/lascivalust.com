@@ -22,7 +22,7 @@ const keywords = [
 
 export function Layout({ children }: { children: ReactNode }) {
   return (
-    <div>
+    <div suppressHydrationWarning>
       <NextSeo
         title={title}
         description={description}
