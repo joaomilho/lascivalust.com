@@ -1,58 +1,27 @@
-.about {
-  line-height: 1.4em;
-  font-size: 1.6rem;
-}
-
-.about p{
-  padding: 0.6em 20px;
-  max-width: 980px;
-  margin: 0;
-}
-
 .about ul {
   margin: 0 0 40px 0;
 }
 
-.emailLink{
+.emailLink {
   /* font-size: 2rem; */
   z-index: 999999999;
   display: inline-block;
 }
 
-
-.about a:hover {
-  text-decoration: underline;
-}
-
-.about a {
-  color: var(--pink);
-}
-
 @media (min-width: 1080px) {
-  .about {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-  }
-
-  .about p {
-    padding: 0.6em var(--padding);
-  }
-
   .about ul {
     padding: 0.6em calc(var(--padding) * 2);
   }
 
-  .emailLink{
+  .emailLink {
     font-size: 4rem;
-    /* z-index: 999999999; */
-    /* display: inline-block; */
   }
 
-  .inPersonTribute{
+  .inPersonTribute {
     font-size: 6rem;
   }
-  
-  .virtualTribute{
+
+  .virtualTribute {
     font-size: 4rem;
   }
 

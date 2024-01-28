@@ -1,14 +1,13 @@
 .simpleHeader {
-  
   z-index: 20000;
 }
 
 .simpleHeader  {
-  padding: 40px;
   font-family: "freight-display-pro", serif;
-  font-size: 5rem;
-  margin: 0;
+  font-size: 3rem;
   font-style: italic;
+  padding: calc(var(--padding) * 2) var(--padding) var(--padding) var(--padding);
+  margin: 0;
 }
 
 
@@ -22,8 +21,5 @@
   .simpleHeader  {
     padding: 100px var(--padding) 40px var(--padding);
     font-size: 6rem;
-    line-height: 0;
-    /* padding: 0; */
-    top: 0px;
   }
 }

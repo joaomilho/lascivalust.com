@@ -1,3 +1,4 @@
+
 .video {
   display: block;
   background-size: cover;
@@ -17,7 +18,14 @@
 }
 
 
+.gallery {
+  padding: 20px;
+}
+
 @media (min-width: 1080px) {
+  .gallery {
+    padding: 80px;
+  }
 
   .protocol {
     font-size: 2.5rem;
@@ -26,17 +34,17 @@
 }
 
 .cta {
-  /* color: rgba(255, 255, 255, 0.8); */
+  
   text-align: center;
-  font-weight: 300;
+  /* font-weight: 300; */
   font-size: 1.6rem;
-  padding: 80px 20px;
+  /* padding: 80px 20px; */
 }
 
 @media (min-width: 1080px) {
   .cta {
     font-size: 2.5rem;
-    padding: 80px;
+    /* padding: 80px; */
   }
 }
 
@@ -132,7 +140,7 @@
 .social ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 180px;
+  /* margin: 0 0 180px; */
   display: flex;
   /* align-items: center; */
   flex-flow: row nowrap;

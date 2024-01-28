@@ -1,5 +1,4 @@
 import styles from "./Menu.module.css";
-import type { Device } from "../../hooks/useDevice";
 import { useState } from "react";
 import { Divide as Hamburger } from "hamburger-react";
 import { mailto } from "../config";
@@ -17,15 +16,7 @@ Menu.defaultProps = {
   show: false,
 };
 
-export default function Menu({
-  y,
-  device,
-  show,
-}: {
-  y: number;
-  device: Device;
-  show: boolean;
-}) {
+export default function Menu({ show }: { show: boolean }) {
   const [open, setOpen] = useState<boolean>(false);
 
   function click(screen: Screen) {

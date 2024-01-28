@@ -3,7 +3,7 @@ import styles from "./About.module.css";
 
 export default function Tributes() {
   return (
-    <div className={styles.about}>
+    <section>
       <div className={styles.sessions}>
         <Header text="Tributes" />
 
@@ -16,6 +16,6 @@ export default function Tributes() {
           <a href="https://www.wishtender.com/lascivalust">Wishtender</a>.
         </p>
       </div>
-    </div>
+    </section>
   );
 }

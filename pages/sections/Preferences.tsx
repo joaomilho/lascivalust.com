@@ -37,15 +37,15 @@ export default function Preferences() {
   const ref = useInView("preferences");
 
   return (
-    <section ref={ref} className={[about.about].join(" ")}>
+    <section ref={ref}>
       <p>
         <h4>Preferences</h4>
 
-        <p className={styles.about} style={{ padding: 0 }}>
+        <p style={{ padding: 0 }}>
           {preferences.map((pref, i) => {
             return (
               <>
-                <span>
+                <span key={pref}>
                   {pref}
                   {detail[pref] ? (
                     <small style={{ color: "#99a" }}> ({detail[pref]})</small>
@@ -62,7 +62,7 @@ export default function Preferences() {
         </p>
       </p>
 
-      <p className={[styles.about].join(" ")}>
+      <p>
         <h4>Limits</h4>
         <span className={styles.listNope}>
           Brown showers, blood play, cultural/religious humiliation, emotional

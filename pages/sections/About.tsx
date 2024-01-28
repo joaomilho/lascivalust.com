@@ -8,7 +8,7 @@ export default function About() {
   const ref = useInView("about");
 
   return (
-    <section className={styles.about} ref={ref}>
+    <section ref={ref}>
       <Header text="About" />
 
       <p>
@@ -19,28 +19,22 @@ export default function About() {
 
       <p>Surrender to Me and I will train you to elevate to My standards.</p>
 
-      {/* <Video video={`smoke`}></Video> */}
+      <p>
+        As a Professional Seductrix <i>&</i> Dominatrix, I like to implement
+        High-Protocol into Play using My natural ability to seduce, creating a
+        unique experience where each encounter is shaped for building intimacy &
+        trust while challenging your body and mind constantly. Transforming you
+        into the toy that I will deliciously use as I see fit.
+      </p>
 
-      <div>
-        <p>
-          As a Professional Seductrix <i>&</i> Dominatrix, I like to implement
-          High-Protocol into Play using My natural ability to seduce, creating a
-          unique experience where each encounter is shaped for building intimacy
-          & trust while challenging your body and mind constantly. Transforming
-          you into the toy that I will deliciously use as I see fit.
-        </p>
+      <p>
+        I absolutely love proper Worshipping and receiving gifts and Tributes up
+        to My standards, when you put effort into satisfying Me and want to be
+        good and obey. When you are genuinely grateful for being shown where you
+        belong, feeling the privilege of My presence over you.
+      </p>
 
-        <p>
-          I absolutely love proper Worshipping and receiving gifts and Tributes
-          up to My standards, when you put effort into satisfying Me and want to
-          be good and obey. When you are genuinely grateful for being shown
-          where you belong, feeling the privilege of My presence over you.
-        </p>
-
-        <p>Be ready to fall in lust.</p>
-
-        {/* <Video video={`smoke-retro`}></Video> */}
-      </div>
+      <p>Be ready to fall in lust.</p>
     </section>
   );
 }

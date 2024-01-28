@@ -8,11 +8,11 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 export default function Locations() {
   return (
     <>
-      <div className={styles.about}>
+      <div>
         <Header text="Locations" />
 
         <ResponsiveMasonry
-          columnsCountBreakPoints={{ 0: 2 }}
+          columnsCountBreakPoints={{ 0: 1, 700: 2 }}
           style={{ padding: `0` }}
         >
           <Masonry gutter={"2px"}>

@@ -7,7 +7,7 @@ import { mailto } from "../config";
 export default function Sessions() {
   return (
     <>
-      <div className={styles.about}>
+      <section>
         <Header text="Sessions" />
         <div>
           <p>
@@ -24,10 +24,8 @@ export default function Sessions() {
             all Sessions as a standard practice.
           </p>
         </div>
-      </div>
+      </section>
       <Preferences />
-
-      {/* <Video video={`smoke-cartoon`}></Video> */}
     </>
   );
 }

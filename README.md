@@ -24,13 +24,13 @@ Optimize video
 - -an removes audio
 
 ```
-ffmpeg -i smoke-cartoon.mov \
+ffmpeg -i tea-time.mp4 \
     -vcodec libvpx-vp9 -b:v 1M -acodec libvorbis \
-    smoke-cartoon-1.webm
+    tea-time.webm
 
-ffmpeg -i smoke-cartoon-1.webm \
+ffmpeg -i tea-time.webm \
     -map_metadata -1 -c:v copy -c:a copy \
-    smoke-cartoon-2.webm
+    tea-time.webm
 ```
 
 

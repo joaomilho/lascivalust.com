@@ -12,9 +12,8 @@ export default function Index() {
   return (
     <Layout>
       <PopUp />
-      <Menu device={device} y={y} show />
+      <Menu show />
 
-      <h1 style={{ padding: `80px 40px 40px 40px` }}>Gallery</h1>
       <Gallery />
 
       <Footer />
