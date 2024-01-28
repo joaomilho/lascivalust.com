@@ -1,5 +1,6 @@
 import styles from "../../styles/Home.module.css";
 import { mailto } from "../config";
+import Social from "./Social";
 
 export default function CTA() {
   return (
@@ -8,6 +9,7 @@ export default function CTA() {
       <a href={mailto} className={styles.applyButton}>
         Submit to Me
       </a>
+      <Social />
     </section>
   );
 }

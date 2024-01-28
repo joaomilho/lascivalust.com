@@ -7,5 +7,15 @@ export default function Image({
   image: string;
   className: string;
 }) {
-  return <img src={`./imgs/${image}.webp`} className={className} />;
+  return (
+    <div
+      style={{
+        width: 420,
+        height: 420,
+        background: `url(./imgs/${image}.webp)`,
+      }}
+    >
+      {/* <img src={``} className={className} /> */}
+    </div>
+  );
 }

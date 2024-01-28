@@ -1,19 +1,14 @@
 .simpleHeader {
-  mix-blend-mode: difference;
+  
   z-index: 20000;
 }
 
-.simpleHeader h1 {
-  padding: 20px;
-  
+.simpleHeader  {
+  padding: 40px;
   font-family: "freight-display-pro", serif;
-  color: red;
   font-size: 5rem;
-  line-height: 2rem;
   margin: 0;
-  position: relative;
-  z-index: 2000;
-  /* top: -50px; */
+  font-style: italic;
 }
 
 
@@ -24,10 +19,11 @@
 
 
 @media (min-width: 1080px) {
-  .simpleHeader h1 {
-    padding: var(--padding);
-    font-size: 14rem;
-    line-height: 0em;
+  .simpleHeader  {
+    padding: 100px var(--padding) 40px var(--padding);
+    font-size: 6rem;
+    line-height: 0;
+    /* padding: 0; */
     top: 0px;
   }
 }

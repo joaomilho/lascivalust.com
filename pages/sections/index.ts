@@ -7,3 +7,5 @@ export { default as Menu } from "./Menu";
 export { default as Footer } from "./Footer";
 export { default as Sessions } from "./Sessions";
 export { default as Tributes } from "./Tributes";
+export { default as Social } from "./Social";
+export { default as Locations } from "./Locations";

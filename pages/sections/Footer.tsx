@@ -1,17 +1,5 @@
 import styles from "../../styles/Home.module.css";
-
-import { SocialIcon } from "react-social-icons";
-import { SectionMarquee } from "../components/SectionMarquee";
-import ComposedBlends from "../components/ComposedBlends";
-import Image from "next/image";
-
-const links = [
-  { source: "Twitter", destination: "https://twitter.com/lascivalust" },
-  {
-    source: "Instagram",
-    destination: "https://www.instagram.com/mistress_lasciva",
-  },
-];
+import Social from "./Social";
 
 const networks: { url: string; desc: string; bannerURL: string }[] = [
   {
@@ -63,49 +51,14 @@ const networks: { url: string; desc: string; bannerURL: string }[] = [
 
 export default function Footer() {
   return (
-    <>
-      <div className={styles.social}>
-        <ul>
-          {links.map((link, i) => {
-            return (
-              <li key={i}>
-                <a href={link.destination}>
-                  <SocialIcon
-                    bgColor={"transparent"}
-                    fgColor={"white"}
-                    url={link.destination}
-                  />
-                  {/* <br />
-                {link.source} */}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-
-      {/* <ComposedBlends /> */}
-      <SectionMarquee />
-      <footer className={styles.footer}>
-        {/* <img
-          alt="Lasciva Lust"
-          src={`./imgs/signature-inverse.png`}
-          style={{ width: 250 }}
-        /> */}
-        <div
-          style={{
-            fontFamily: "freight-display-pro",
-          }}
-        >
+    <div>
+      <footer className={styles.footer} style={{ background: "black" }}>
+        <div style={{ fontFamily: "freight-display-pro" }}>
           © 2022 - 2023 lacscivalust.com - All Rights Reserved.
         </div>
 
         <hr />
-        <div
-          style={{
-            filter: `grayscale(1) contrast(5) brightness(0.6)  `,
-          }}
-        >
+        <div style={{ filter: `grayscale(1) contrast(5) brightness(0.6)  ` }}>
           {networks.map((net) => {
             return (
               <div key={net.url} style={{ padding: 5 }}>
@@ -124,6 +77,6 @@ export default function Footer() {
           })}
         </div>
       </footer>
-    </>
+    </div>
   );
 }

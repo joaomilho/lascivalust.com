@@ -9,6 +9,7 @@ enum Screen {
   gallery = "gallery",
   sessions = "sessions",
   submit = "submit",
+  locations = "locations",
   tributes = "tributes",
 }
 
@@ -63,8 +64,20 @@ export default function Menu({
         </li>
 
         <li>
+          <a href="/#locatiomns" onClick={click(Screen.locations)}>
+            Locatiomns
+          </a>
+        </li>
+
+        <li>
           <a href="/#gallery" onClick={click(Screen.gallery)}>
             Gallery
+          </a>
+        </li>
+
+        <li>
+          <a href="/#tributes" onClick={click(Screen.tributes)}>
+            Tributes
           </a>
         </li>
 

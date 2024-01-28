@@ -36,15 +36,11 @@
 @media (min-width: 1080px) {
   .cta {
     font-size: 2.5rem;
-    padding: 120px;
+    padding: 80px;
   }
 }
 
 .applyButton {
-  /* font-size: inherit; */
-  /* font-weight: inherit; */
-
-  /* font-family: FreightDispProBlack; */
   cursor: pointer;
   transition-duration: 0.1s;
 
@@ -55,7 +51,7 @@
   padding: 8px 18px;
   min-height: 48px;
 
-  background-color: rgb(214, 12, 16);
+  background-color: var(--pink);
 
   color: rgb(255, 255, 255);
   border-radius: 4px;
@@ -66,20 +62,15 @@
 }
 
 .main {
-  /* z-index: 97; */
   flex: 1;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  /* position: relative; */
   margin-bottom: 40px;
-  /* border: 10px solid red; */
 }
 
 @media (min-width: 1080px) {
   .main {
-    /* margin-bottom: 0px; */
     padding: 100px;
   }
 }
@@ -122,7 +113,7 @@
   margin: 0;
   padding: 0;
   text-decoration: line-through;
-  text-decoration-color: #f00;
+  text-decoration-color: #000;
 }
 
 .anchor {
@@ -132,10 +123,6 @@
 }
 
 .footer {
-  background: #000;
-  /* min-height: 400px; */
-  /* position: absolute;
-  bottom: 0; */
   width: 100vw;
   color: white;
   padding: 40px 0 80px 0;

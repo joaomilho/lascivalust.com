@@ -1,5 +1,8 @@
 :root {
   --padding: 80px;
+
+  --pink: #cf66ab;
+  
 }
 
 @import url("https://use.typekit.net/fop7hsj.css");
@@ -12,17 +15,13 @@
   font-display: swap;
 }
 
-/* font-family: , serif; */
-
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: "freight-display-pro", "FreightDispProLight", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background: black;
-    color: white;
-    
+    background: white;
 }
 
 b {
@@ -41,10 +40,8 @@ a {
 
 
 hr {
-  /* width: 200px; */
   border: 0;
   border-bottom: 1px solid rgba(0,0,0,0.1);
-  /* margin: 60px auto; */
 }
 
 h4 {
