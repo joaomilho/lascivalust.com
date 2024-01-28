@@ -64,8 +64,8 @@ export default function Menu({
         </li>
 
         <li>
-          <a href="/#locatiomns" onClick={click(Screen.locations)}>
-            Locatiomns
+          <a href="/#locations" onClick={click(Screen.locations)}>
+            Locations
           </a>
         </li>
 
