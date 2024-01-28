@@ -10,10 +10,11 @@ export default function Tributes() {
 
           <p>
             For tributes, use My{" "}
-            <a href="https://paypal.me/MLcreativeart">PayPal</a> or send Me a
-            gift from My{" "}
-            <a href="https://www.luxylist.it/lascivalust">Luxylist</a>.
-            {/* TBD Add Lux */}
+            <a href="https://paypal.me/MLcreativeart">PayPal</a>.
+            <br />
+            Send me a gift on{" "}
+            <a href="https://www.luxylist.it/lascivalust">LuxyList</a> or{" "}
+            <a href="https://www.wishtender.com/lascivalust">Wishtender</a>.
           </p>
         </div>
       </div>

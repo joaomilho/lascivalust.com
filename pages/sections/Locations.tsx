@@ -13,15 +13,16 @@ export default function Locations() {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 0: 2 }}
-          style={{ padding: `80px 0` }}
+          style={{ padding: `0` }}
         >
           <Masonry gutter={"2px"}>
             <p>
-              <h4>In Berlin</h4>I work at the best studios in Berlin:{" "}
+              <h4>In Berlin</h4>At{" "}
               <a href="https://studioluxberlin.de/team/profil/lasciva-lust.html">
-                Studio Lux
+                BDSM Studio Lux
               </a>{" "}
-              and other exclusive locations.
+              and at My private play space, the{" "}
+              <a href="mailto:infotempleoflust@gmail.com">Temple of Lust</a>.
             </p>
 
             <p>
