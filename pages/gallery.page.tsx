@@ -15,7 +15,7 @@ export default function Index() {
       <Menu device={device} y={y} show />
 
       <h1 style={{ padding: `80px 40px 40px 40px` }}>Gallery</h1>
-      <Gallery y={y} device={device} />
+      <Gallery />
 
       <Footer />
     </Layout>

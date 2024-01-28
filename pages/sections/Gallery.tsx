@@ -101,8 +101,9 @@ export default function Gallery() {
       <Header text="Gallery" />
 
       <div style={{ padding: 80 }}>
+        {/* @ts-ignore */}
         <RGallery
-          images={images}
+          images={images as any}
           rowHeight={360}
           onClick={handleClick}
           enableImageSelection={false}
