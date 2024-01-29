@@ -1,7 +1,4 @@
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import styles from "./About.module.css";
-import { Header, Spotify, Video } from "../components";
-import { SocialIcon } from "react-social-icons";
+import { Header } from "../components";
 
 export default function About() {
   return (
