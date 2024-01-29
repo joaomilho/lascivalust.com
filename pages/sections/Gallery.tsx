@@ -1,6 +1,5 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { Device } from "../../hooks/useDevice";
-import useInView from "../../hooks/useInView";
 import styles from "../../styles/Home.module.css";
 import { Header, Image } from "../components";
 import React from "react";
@@ -68,8 +67,6 @@ function Img() {
 }
 
 export default function Gallery() {
-  const ref = useInView("gallery");
-
   const device = useDevice();
   const height = heightMap[device];
   const margin = device === "desktop" ? 6 : 4;
@@ -88,7 +85,7 @@ export default function Gallery() {
   const handleMoveNext = () => setIndex(nextIndex);
 
   return (
-    <section ref={ref}>
+    <section>
       <Header text="Gallery" />
 
       <div className={styles.gallery}>
@@ -120,21 +117,8 @@ export default function Gallery() {
           onCloseRequest={handleClose}
           onMovePrevRequest={handleMovePrev}
           onMoveNextRequest={handleMoveNext}
-
-          // too
-          // toolbarButtons={[<>HEY!</>]}
         />
       )}
-
-      {/* <ResponsiveMasonry
-        columnsCountBreakPoints={{ 350: 2, 900: 3 }}
-        style={{ padding: `80px` }}
-      >
-        <Masonry gutter={"20px"}>
-          
-
-          {/* <div /> */}
-      {/* <Image image={`6`} className={styles.pic} /> */}
     </section>
   );
 }

@@ -1,8 +1,4 @@
-import { Header, Video } from "../components";
-import CTA from "./CTA";
-import styles from "./About.module.css";
-import Preferences from "./Preferences";
-import { mailto } from "../config";
+import { Header } from "../components";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 export default function Locations() {

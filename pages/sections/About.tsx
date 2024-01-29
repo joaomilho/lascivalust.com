@@ -2,13 +2,10 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import styles from "./About.module.css";
 import { Header, Spotify, Video } from "../components";
 import { SocialIcon } from "react-social-icons";
-import useInView from "../../hooks/useInView";
 
 export default function About() {
-  const ref = useInView("about");
-
   return (
-    <section ref={ref}>
+    <section>
       <Header text="About" />
 
       <p>

@@ -1,6 +1,4 @@
 import styles from "../styles/Home.module.css";
-import { useDevice } from "../hooks/useDevice";
-import { useWindowScrollPosition } from "rooks";
 import {
   Menu,
   About,
@@ -8,7 +6,6 @@ import {
   CTA,
   Footer,
   Sessions,
-  Social,
   Locations,
   Tributes,
 } from "./sections";
@@ -18,9 +15,6 @@ import NewMain from "./sections/NewMain";
 import { Video } from "./components";
 
 export default function Index() {
-  const device = useDevice();
-
-  const { scrollY: y } = useWindowScrollPosition();
   return (
     <Layout>
       <PopUp />

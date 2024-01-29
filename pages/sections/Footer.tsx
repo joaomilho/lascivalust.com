@@ -1,5 +1,4 @@
 import styles from "../../styles/Home.module.css";
-import Social from "./Social";
 
 const networks: { url: string; desc: string; bannerURL: string }[] = [
   {

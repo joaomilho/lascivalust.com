@@ -1,8 +1,4 @@
 import styles from "../../styles/Home.module.css";
-import about from "./About.module.css";
-
-import useInView from "../../hooks/useInView";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 export const preferences = [
   "High Protocol",
@@ -34,10 +30,8 @@ export const detail: Record<string, string> = {
 };
 
 export default function Preferences() {
-  const ref = useInView("preferences");
-
   return (
-    <section ref={ref}>
+    <section>
       <p>
         <h4>Preferences</h4>
 
