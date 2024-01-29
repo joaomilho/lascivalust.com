@@ -9,7 +9,7 @@ import {
   Locations,
   Tributes,
 } from "./sections";
-import PopUp from "./components/PopUp";
+
 import { Layout } from "./Layout";
 import NewMain from "./sections/NewMain";
 import { Video } from "./components";
@@ -17,7 +17,6 @@ import { Video } from "./components";
 export default function Index() {
   return (
     <Layout>
-      <PopUp />
       <Menu />
       <NewMain />
       <a id="about" className={styles.anchor} />
