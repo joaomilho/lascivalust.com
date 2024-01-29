@@ -17,19 +17,10 @@
     font-size: 4rem;
   }
 
-  .inPersonTribute {
-    font-size: 6rem;
-  }
-
-  .virtualTribute {
-    font-size: 4rem;
-  }
 
   .knowMore {
     padding: var(--padding);
   }
 
-  .sessions {
-    margin-top: 120px;
-  }
+
 }

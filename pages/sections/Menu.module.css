@@ -48,38 +48,30 @@
   margin: 0;
   list-style: 0;
   padding: 0;
-  align-items: center;
+  /* align-items: center; */
   font-size: 0.75em;
 }
 
 
-
+.menu li{
+  padding-left: var(--padding);
+  margin: 0;
+}
 .menu li a {
-  padding: var(--padding);
-
-  color: var(--pink) !important;
-
-  font-size: 2rem;
-  line-height: 3rem;
-  /* background: black; */
-  /* transition: all 0.2s ease-in-out; */
-  
+  display: block;
+  padding: 2px;
+  font-size: 1.8rem;
 }
 
 .menu li a:hover {
-  color: white !important;
-  /* border-bottom: 2px solid black; */
+  color: black;
+  background: var(--pink);
+  text-decoration: none;
 }
-
-
 
 @media (min-width: 1080px) {
   .logo {
     font-size: 28px;
-  }
-
-  .menu li a {
-    padding-left: 80px;
   }
 }
 

@@ -4,11 +4,13 @@ import Social from "./Social";
 
 export default function CTA() {
   return (
-    <section className={styles.cta}>
-      Ready to start your training? <br />
-      <a href={mailto} className={styles.applyButton}>
-        Submit to Me
-      </a>
+    <section>
+      <div className={styles.cta}>
+        Ready to start your training? <br />
+        <a href={mailto} className={styles.applyButton}>
+          Submit to Me
+        </a>
+      </div>
       <Social />
     </section>
   );

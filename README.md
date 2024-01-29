@@ -24,13 +24,13 @@ Optimize video
 - -an removes audio
 
 ```
-ffmpeg -i tea-time.mp4 \
+ffmpeg -i main-mobile-2024.mov \
     -vcodec libvpx-vp9 -b:v 1M -acodec libvorbis \
-    tea-time.webm
+    main-mobile-2024.webm
 
-ffmpeg -i tea-time.webm \
+ffmpeg -i walk-the-dog.webm \
     -map_metadata -1 -c:v copy -c:a copy \
-    tea-time.webm
+    walk-the-dog.webm
 ```
 
 

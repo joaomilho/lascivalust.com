@@ -21,6 +21,7 @@ body {
     BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
     Droid Sans, Helvetica Neue, sans-serif;
   background: white;
+  color: #223;
 }
 
 b {
@@ -28,7 +29,6 @@ b {
 }
 
 a {
-  /* color: inherit; */
   text-decoration: none;
   color: var(--pink);
 }
@@ -52,8 +52,9 @@ a:hover {
 h4 {
   font-family: "freight-display-pro", "FreightDispProLight";
   font-style: italic;
-  font-size: 2rem;
-  margin: 2rem 0 1rem 0;
+  font-size: 1.75rem;
+  letter-spacing: 0.5px;
+  margin: 0 0 1rem 0;
 }
 
 @media (min-width: 1080px) {

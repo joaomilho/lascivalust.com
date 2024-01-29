@@ -17,7 +17,7 @@ export default function Locations() {
         >
           <Masonry gutter={"2px"}>
             <p>
-              <h4>In Berlin</h4>At{" "}
+              <h4 style={{ marginTop: 0 }}>In Berlin</h4>At{" "}
               <a href="https://studioluxberlin.de/team/profil/lasciva-lust.html">
                 BDSM Studio Lux
               </a>{" "}
@@ -26,7 +26,7 @@ export default function Locations() {
             </p>
 
             <p>
-              <h4>Tour 2024</h4>
+              <h4 style={{ marginTop: 0 }}>Tour 2024</h4>
 
               <b>Hamburg</b>
               <span style={{ color: "#333" }}> // </span>

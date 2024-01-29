@@ -4,7 +4,7 @@ import styles from "./About.module.css";
 export default function Tributes() {
   return (
     <section>
-      <div className={styles.sessions}>
+      <div>
         <Header text="Tributes" />
 
         <p>
