@@ -63,6 +63,10 @@ const heightMap: Record<Device, number> = {
   unknown: 200,
 };
 
+function Img() {
+  return <>AAA</>;
+}
+
 export default function Gallery() {
   const ref = useInView("gallery");
 
@@ -95,6 +99,12 @@ export default function Gallery() {
           onClick={handleClick}
           enableImageSelection={false}
           margin={margin}
+          thumbnailImageComponent={({ imageProps, index }) => {
+            return (
+              // @ts-ignore
+              <img {...imageProps} loading={index < 4 ? "eager" : "lazy"} />
+            );
+          }}
         />
       </div>
 
@@ -110,6 +120,7 @@ export default function Gallery() {
           onCloseRequest={handleClose}
           onMovePrevRequest={handleMovePrev}
           onMoveNextRequest={handleMoveNext}
+
           // too
           // toolbarButtons={[<>HEY!</>]}
         />
